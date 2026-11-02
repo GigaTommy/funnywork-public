@@ -34,7 +34,7 @@ python3 scripts/build/build-public-source.py \
   --ref COMMIT --output .local/releases/public-source-COMMIT
 ```
 
-The output contains `source/`, `funnywork-source.tar.gz`, `SOURCE-MANIFEST.json`, and `SHA256SUMS`. Export reads only that commit, excluding Git metadata, untracked files, and local configuration. It rejects existing output directories, private material paths, and escaping symlinks. The manifest records the source commit and per-file hashes.
+The output contains `source/`, `funnywork-source.tar.gz`, `SOURCE-MANIFEST.json`, `SOURCE-FILES.zlist`, and `SHA256SUMS`. Export reads only that commit, excluding Git metadata, untracked files, and local configuration. It rejects existing output directories, private material paths, and escaping symlinks. The manifest records the source commit and per-file hashes.
 
 ## Review and publication
 
@@ -47,3 +47,11 @@ The output contains `source/`, `funnywork-source.tar.gz`, `SOURCE-MANIFEST.json`
 Generating a snapshot does not create a GitHub repository or change an existing repository's visibility. Source publication, websites, services, and installer deployment are separate operations.
 
 The publication target is [GigaTommy/funnywork-public](https://github.com/GigaTommy/funnywork-public). The export manifest lists the excluded one-off fixed-commit build workflow, which requires private history and remains in the development repository. Regular cross-platform checks remain in the public source.
+
+Initialize the public repository from the exact exported file list. This retains reviewed upstream fixtures that match ignore rules while excluding newly created local material:
+
+```sh
+git -C .local/releases/public-source-COMMIT/source init -b main
+git -C .local/releases/public-source-COMMIT/source add --force \
+  --pathspec-from-file=../SOURCE-FILES.zlist --pathspec-file-nul
+```

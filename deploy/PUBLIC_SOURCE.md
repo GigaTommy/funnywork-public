@@ -34,7 +34,7 @@ python3 scripts/build/build-public-source.py \
   --ref COMMIT --output .local/releases/public-source-COMMIT
 ```
 
-输出包含 `source/`、`funnywork-source.tar.gz`、`SOURCE-MANIFEST.json` 和 `SHA256SUMS`。导出只读取该 Git 提交，排除 Git 元数据、未跟踪文件和本地配置；拒绝已存在的输出目录、私有材料路径及逃逸符号链接。清单记录源提交和逐文件摘要。
+输出包含 `source/`、`funnywork-source.tar.gz`、`SOURCE-MANIFEST.json`、`SOURCE-FILES.zlist` 和 `SHA256SUMS`。导出只读取该 Git 提交，排除 Git 元数据、未跟踪文件和本地配置；拒绝已存在的输出目录、私有材料路径及逃逸符号链接。清单记录源提交和逐文件摘要。
 
 ## 审核与发布
 
@@ -47,3 +47,11 @@ python3 scripts/build/build-public-source.py \
 生成快照不会创建 GitHub 仓库或更改现有仓库可见性。源码公开与网站、服务和安装包部署分别执行。
 
 公开目标为 [GigaTommy/funnywork-public](https://github.com/GigaTommy/funnywork-public)。导出清单会列出排除的旧固定提交构建任务；该任务依赖私有历史，仅在开发仓库保留，常规跨平台检查继续随源码发布。
+
+初始化公开仓库时，从导出清单精确添加文件，保留上游已跟踪但匹配忽略规则的合成夹具，同时排除本地新增资料：
+
+```sh
+git -C .local/releases/public-source-COMMIT/source init -b main
+git -C .local/releases/public-source-COMMIT/source add --force \
+  --pathspec-from-file=../SOURCE-FILES.zlist --pathspec-file-nul
+```

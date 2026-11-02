@@ -20,6 +20,12 @@ jobs:
       - run: python scripts/checks/check-repository.py
       - run: python scripts/checks/test_repository_hygiene.py
       - run: python scripts/checks/test_config_secrets.py
+      - name: Source publication boundary checks
+        if: runner.os == 'Linux'
+        run: |
+          python scripts/checks/test_public_source.py
+          python scripts/checks/test_regional_configuration.py
+          python scripts/checks/test-site-download-routing.py
       - run: python -m compileall -q funnyworker scripts
   management-and-business:
     runs-on: ubuntu-latest

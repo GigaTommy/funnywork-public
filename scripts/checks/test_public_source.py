@@ -32,6 +32,9 @@ class PublicSourceTests(unittest.TestCase):
                 p = root / name
                 p.parent.mkdir(parents=True, exist_ok=True)
                 p.write_text('notice fixture')
+            (root / '.gitignore').write_text('*.local\n')
+            (root / 'app.local').write_text('synthetic tracked fixture')
+            git('add', '-f', 'app.local')
             (root / 'old-private-record.txt').write_text('historical-only fixture')
             workflow = root / '.github/workflows/linux-fixed-preview.yml'
             workflow.parent.mkdir(parents=True)
@@ -50,6 +53,11 @@ class PublicSourceTests(unittest.TestCase):
             self.assertFalse((candidate / 'source/old-private-record.txt').exists())
             self.assertFalse((candidate / 'source/untracked-password.txt').exists())
             self.assertEqual((candidate / 'source/LICENSE').read_text(), 'notice fixture')
+            public = candidate / 'source'
+            subprocess.run(['git', 'init', '-q', str(public)], check=True)
+            subprocess.run(['git', '-C', str(public), 'add', '--force', '--pathspec-from-file=' + str(candidate / 'SOURCE-FILES.zlist'), '--pathspec-file-nul'], check=True)
+            self.assertIn('app.local', subprocess.check_output(['git', '-C', str(public), 'ls-files'], text=True).splitlines())
+            self.assertNotIn('untracked-password.txt', subprocess.check_output(['git', '-C', str(public), 'ls-files'], text=True).splitlines())
             with self.assertRaises(FileExistsError):
                 module.export_source(root, 'HEAD', candidate)
             with self.assertRaises(ValueError):

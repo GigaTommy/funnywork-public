@@ -65,6 +65,7 @@ def export_source(repository, ref, output):
             if not (source / required).is_file():
                 raise ValueError('Missing distribution notice: ' + required)
         metadata = {'schema': 1, 'sourceCommit': commit, 'historyIncluded': False, 'excludedPaths': sorted(EXCLUDED_PATHS), 'files': records}
+        (stage / 'SOURCE-FILES.zlist').write_bytes(b'\0'.join(row['path'].encode('utf-8') for row in records) + b'\0')
         (stage / 'SOURCE-MANIFEST.json').write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + '\n')
         raw.unlink()
         with tarfile.open(stage / 'funnywork-source.tar.gz', 'w:gz') as archive:
