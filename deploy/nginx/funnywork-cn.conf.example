@@ -1,0 +1,128 @@
+# Install as /etc/nginx/sites-available/funnywork-cn.conf (inside http context).
+# Local introduction pages; authenticated client APIs forward to overseas service.
+# Existing FunnyScan virtual hosts remain unchanged.
+log_format fw_cn_safe '$remote_addr $request_method $uri $status $request_time';
+limit_req_zone $binary_remote_addr zone=fw_cn_login:1m rate=5r/m;
+limit_conn_zone $binary_remote_addr zone=fw_cn_connections:1m;
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name regional.example.invalid;
+    location ^~ /.well-known/acme-challenge/ {
+        root /srv/funnywork/acme;
+        default_type text/plain;
+        try_files $uri =404;
+    }
+    location / { return 308 https://regional.example.invalid$request_uri; }
+}
+
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name regional.example.invalid;
+    ssl_certificate /etc/letsencrypt/live/regional.example.invalid/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/regional.example.invalid/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_session_tickets off;
+    root /srv/funnywork/site;
+    index index.html;
+    access_log /var/log/nginx/funnywork-cn-access.log fw_cn_safe;
+    error_log /var/log/nginx/funnywork-cn-error.log warn;
+    add_header Strict-Transport-Security "max-age=86400" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header X-Frame-Options "DENY" always;
+    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+    add_header Permissions-Policy "camera=(), microphone=(), geolocation=()" always;
+    client_max_body_size 3m;
+    client_header_timeout 15s;
+    client_body_timeout 60s;
+    limit_conn fw_cn_connections 30;
+    limit_req_status 429;
+
+    # Resolve periodically so Cloudflare address changes do not need reloads.
+    resolver 223.5.5.5 223.6.6.6 valid=300s ipv6=off;
+    resolver_timeout 5s;
+    set $fw_cn_origin funnywork.funnypixelsapp.com;
+    proxy_http_version 1.1;
+    proxy_set_header Host funnywork.funnypixelsapp.com;
+    proxy_set_header X-Forwarded-Host regional.example.invalid;
+    proxy_set_header X-Forwarded-Proto https;
+    proxy_set_header X-Forwarded-For $remote_addr;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header Connection "";
+    proxy_ssl_server_name on;
+    proxy_ssl_name funnywork.funnypixelsapp.com;
+    proxy_ssl_verify on;
+    proxy_ssl_verify_depth 3;
+    proxy_ssl_trusted_certificate /etc/ssl/certs/ca-certificates.crt;
+    proxy_connect_timeout 15s;
+    proxy_send_timeout 300s;
+    proxy_read_timeout 300s;
+    proxy_buffering off;
+    proxy_request_buffering off;
+    proxy_cache off;
+    # Never retry POST/turn execution on unknown outcomes.
+    proxy_next_upstream off;
+    proxy_redirect https://funnywork.funnypixelsapp.com/ https://regional.example.invalid/;
+    proxy_cookie_domain funnywork.funnypixelsapp.com regional.example.invalid;
+
+    location = /health {
+        default_type application/json;
+        return 200 '{"status":"ok","service":"funnywork-cn-entry"}';
+    }
+    location = /api/account/login {
+        limit_except POST { deny all; }
+        limit_req zone=fw_cn_login burst=5 nodelay;
+        proxy_pass https://$fw_cn_origin$request_uri;
+    }
+    # Model execution and phone chat streams may wait up to ten minutes upstream.
+    location ^~ /api/account/inference/ {
+        client_max_body_size 16m;
+        limit_except GET POST { deny all; }
+        proxy_read_timeout 660s;
+        proxy_send_timeout 660s;
+        proxy_pass https://$fw_cn_origin$request_uri;
+    }
+    # Exact root prevents Nginx's automatic /chats -> /chats/ 301, including history queries.
+    location = /api/account/chats {
+        client_max_body_size 16m;
+        limit_except GET POST PUT PATCH DELETE { deny all; }
+        proxy_read_timeout 660s;
+        proxy_send_timeout 660s;
+        proxy_pass https://$fw_cn_origin$request_uri;
+    }
+    location ^~ /api/account/chats/ {
+        client_max_body_size 16m;
+        limit_except GET POST PUT PATCH DELETE { deny all; }
+        proxy_read_timeout 660s;
+        proxy_send_timeout 660s;
+        proxy_pass https://$fw_cn_origin$request_uri;
+    }
+    location ^~ /api/account/ {
+        client_max_body_size 16m;
+        limit_except GET POST PUT PATCH DELETE { deny all; }
+        proxy_pass https://$fw_cn_origin$request_uri;
+    }
+    # Management, infrastructure and other APIs are not exposed by this entry.
+    location ~ ^/(?:admin|ruoyi|actuator|api)(?:/|$) { return 403; }
+    location ~ /\. { return 404; }
+    location = / { try_files /index.html =404; }
+    location = /index.html { try_files $uri =404; }
+    location = /security.html { try_files $uri =404; }
+    location = /privacy.html { try_files $uri =404; }
+    location = /styles.css { try_files $uri =404; }
+    location = /site.js { try_files $uri =404; }
+    location = /brochure.html { return 308 /$is_args$args; }
+    location = /media/product/admin-home.png { try_files $uri =404; }
+    location = /media/product/admin-office.png { try_files $uri =404; }
+    location = /media/product/mac-quarterly-presentation.png { try_files $uri =404; }
+    location = /media/product/mac-quarterly-chart.png { try_files $uri =404; }
+    location = /media/product/revenue-trend.png { try_files $uri =404; }
+    location = /media/product/target-completion.png { try_files $uri =404; }
+    location = /media/product/iphone-desktop-task.png { try_files $uri =404; }
+    location = /media/product/iphone-chart-reading.png { try_files $uri =404; }
+    location = /media/product/iphone-chart-preview.mp4 { try_files $uri =404; }
+    location = /assets/brand-mark.png { try_files $uri =404; }
+    location / { return 404; }
+}

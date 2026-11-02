@@ -1,0 +1,1 @@
+CREATE INDEX reconcile_grants_principal_idx ON operation_reconcile_grants(tenant_id,principal_id,operation_id);

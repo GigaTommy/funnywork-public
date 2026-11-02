@@ -1,0 +1,537 @@
+{
+  "scope": "Installed application and actual deployment acceptance; not covered by mock browser tests",
+  "environment": {
+    "os": "",
+    "browser": "",
+    "buildVersion": "",
+    "sourceRevision": "",
+    "worktreeChanges": true,
+    "engineVersion": "",
+    "modelVersion": "",
+    "hardware": "",
+    "zone": ""
+  },
+  "executionTimeUTC": null,
+  "executor": "",
+  "cases": [
+    {
+      "id": "P01",
+      "steps": "A登录测试门户；分别访问模型、活动与用量；刷新页面并用返回/前进",
+      "expected": "登录态保持；菜单/页面路由正常；新增组件和原有模型发布/业务活动模块均可用，无控制台异常",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "P02",
+      "steps": "B只读登录，读取目录/队列/报表；尝试创建、修改、取消与核对",
+      "expected": "读权限正常；所有写请求被服务端拒绝，无数据库变更；记录按钮是否禁用或提供清楚反馈",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "P03",
+      "steps": "west辖区管理员查看east池/票据/用量，直接粘贴east资源URL",
+      "expected": "不显示east数据；API403/404；不能用缓存结果越区",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "P04",
+      "steps": "X其他租户登录，尝试已知池和票据URL",
+      "expected": "不泄露原租户数据、地址或名称；写请求无效果",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "P05",
+      "steps": "A创建共享昇腾池；登记两模型；未启用时检查员工目录；验证后启用",
+      "expected": "未启用模型不在员工授权目录；两个模型共用同一个池；创建配置不可变",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "P06",
+      "steps": "开两个浏览器页编辑同一个池：第一页保存，第二页提交旧版本",
+      "expected": "第二页409并要求刷新；不覆盖第一页策略；重新编辑可成功",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "P07",
+      "steps": "将池执行上限从2降至1，当前已有2请求；再提交第三请求",
+      "expected": "不杀死现有任务；不会派发新的超限请求，待占用降低后恢复",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "P08",
+      "steps": "等待队列中停用模型，保留另一模型运行",
+      "expected": "停用模型的未执行票据退出；不擅自宣称运行请求已停止；另一模型不被误取消",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "P09",
+      "steps": "多成员查询/按部署/状态/用途/区域/会话/任务筛选；清空；时间边界含from、不含until",
+      "expected": "筛选和分页与服务端一致；93天以内接受、超过拒绝；名字/区域解释清楚",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "P10",
+      "steps": "打开调用抽屉核对成员、设备、逻辑调用；Escape及关闭按钮分别关闭",
+      "expected": "字段对应该行；关闭恢复焦点/可继续操作；抽屉无提示词、请求摘要或上游凭证",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "P11",
+      "steps": "浏览报表时撤销A区域权限或让登录失效；尝试继续加载后页",
+      "expected": "清空敏感结果；无旧分页、跨账号或跨zone数据拼接",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "P12",
+      "steps": "1280×720、1440×900及768宽测试；浅深模式；中文/英文；Chrome/Edge分别执行核心流程",
+      "expected": "必填和状态可见；表格允许内部横向滚动，页面不整体横溢；键盘可访问；无青绿色默认主题",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "N01",
+      "steps": "新测试账号，入口开关关闭/旧服务bootstrap404；登录并打开原模型菜单",
+      "expected": "保留已验证的旧行为，不错误进入企业模式；不调用私有入口",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "N02",
+      "steps": "开启企业模式、发布两个模型；新账号登录；选择Qwen再选择DeepSeek并分别发起测试任务",
+      "expected": "现有选择UI复用；目录仅含授权项；实际票据模型与选择一致；上游密钥不下发",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "N03",
+      "steps": "空目录登录；随后发布模型，等待目录刷新再打开选择",
+      "expected": "空态明确且无公网回退；目录更新可见。若旧默认指向已下线模型，选择新模型后可继续，不默默换模型",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "N04",
+      "steps": "用受管任务及标题/压缩/子任务分别产生请求；核对入口账本与推理服务访问日志",
+      "expected": "每次模型调用有票据；共享池限额包含辅助调用；本地工具执行阶段不占推理许可。GPU网络入口是否仅允许网关需由部署方另行验证",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "N05",
+      "steps": "执行上限1：U1运行，U2提交；等待超过流式空闲超时；再让U1完成",
+      "expected": "U2显示排队，可取消；等待不被误判推理超时；获得许可后正确推理，未重复提交",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "N06",
+      "steps": "U2等待时停止；断网后再连；查询原票据",
+      "expected": "已取消不执行；不确定申请按原callId恢复，不生成重复上游执行",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "N07",
+      "steps": "运行中停止或关闭客户端；检查引擎状态与后台",
+      "expected": "客户端及时停止等待；未确认GPU停止时STOPPING/UNKNOWN仍占用；人工核对有审计，不能自动清空名额",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "N08",
+      "steps": "运行或UNKNOWN状态关闭Host/重启应用，同一请求恢复",
+      "expected": "不自动重放；明确需要核对/恢复；不生成第二次推理消耗",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "N09",
+      "steps": "一个长任务跨工具调用、多轮推理；同时标题与压缩请求",
+      "expected": "各轮独立准入与计量；任务关联可核对；不是整段任务持有名额",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "N10",
+      "steps": "使用8192上下文/2048输出模型；逐步堆积对话触发自动压缩，再手动压缩",
+      "expected": "默认压缩可工作；摘要输出不超过有效限制；摘要记录实际预算；没有因65536默认值拒绝请求",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "N11",
+      "steps": "存在显式过大的压缩/输出配置，或切换小模型但历史已超限",
+      "expected": "明确配置/能力错误，不能隐藏失败或伪造成功；不擅自改写用户显式策略",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "N12",
+      "steps": "单用户提交多个主/子任务，同时另一成员提交",
+      "expected": "每人执行/等待限制生效；员工轮转无永久饥饿；排队位置仅参考，不承诺固定名次",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "N13",
+      "steps": "在排队/运行时撤销用户/zone；停用账号D；尝试后续请求",
+      "expected": "派发前再次拒绝；运行连接收到停止请求；短期入口凭证不能绕过当前授权",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "N14",
+      "steps": "连续使用超过一次10分钟凭证周期；随后退出账号并重新登录",
+      "expected": "续期不暴露上游密钥；退出先完成Host清理再撤销当前设备轮换凭证；其他设备不被误撤销",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "N15",
+      "steps": "已进入企业模式后关闭开关、bootstrap返回404或断网至凭证过期",
+      "expected": "企业账号失败关闭；不恢复公网直连；错误与账号权限状态可区分",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "N16",
+      "steps": "断网前后模型目录被移除；恢复后选择另一模型",
+      "expected": "旧选择不会伪装可执行；下一请求独立验权；未注册能力不能被菜单或旧历史绕过",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "N17",
+      "steps": "两个会话、不同模型；关闭/重开其中会话；排队状态变化",
+      "expected": "模型选择和等待计数按会话隔离；提示不残留、不写入推理历史；当前会话取消不误取消另一会话",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "N18",
+      "steps": "多轮工具任务中切换模型（空闲时）、重启应用再继续",
+      "expected": "多轮工具关联、推理回放和模型选择持久化与契约一致；不因切换伪造历史",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "N19",
+      "steps": "配置模型不支持工具/图片，分别提交相应任务",
+      "expected": "明确能力限制；无隐藏Files上传或其他端点直连；超请求体上限有合理错误",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "N20",
+      "steps": "安装包首次启动、升级、退出菜单、窗口关闭、强制终止和重新启动",
+      "expected": "受管模型配置仍在；账号私有目录稳定；退出无挂起；恢复记录无正文，Unix0700/0600及Windows私有ACL分别核对",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "E01",
+      "steps": "记录NPU型号/数量/内存、驱动、CANN、TorchNPU、引擎、模型/量化、解析器和模板版本；用官方发布的匹配组合",
+      "expected": "模型可装载；版本成套；不拼装各组件“最新版本”",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "E02",
+      "steps": "普通非流式、流式；检查头部、分块、结束事件和最终usage",
+      "expected": "内容原样；首字/结束状态正确；缺失usage明确未知",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "E03",
+      "steps": "用一个简单无副作用工具（如返回固定字符串），再两个并行工具；把结果回放给模型",
+      "expected": "工具名、参数JSON、id和结果关联完整；Harness实际能执行并继续多轮",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "E04",
+      "steps": "工具参数跨多个流片段、长参数、空参数、模型自行不用工具、非法参数",
+      "expected": "增量拼接正确；非法结果可见且不误执行工具",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "E05",
+      "steps": "推理开启/关闭及含推理历史的后续请求；工具与推理混合",
+      "expected": "parser正确、回放可用；不假定所有模型接受统一enable_thinking参数",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "E06",
+      "steps": "标题/摘要/子任务；长短请求混合",
+      "expected": "均经企业入口，选择模型/预算一致；摘要能真正缩短上下文",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "E07",
+      "steps": "输出到上限、空内容、服务返回400/401/429/500、非SSE响应",
+      "expected": "清楚失败或截断；没有SDK自动重复执行；计量完整性准确",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "E08",
+      "steps": "TCP连接拒绝/DNS或TLS建连失败，再恢复服务",
+      "expected": "确定未发送的失败释放名额；下一请求可获准；不需要人工释放UNKNOWN",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "E09",
+      "steps": "请求发送后断流/超时、客户端中止或引擎进程异常",
+      "expected": "无终止证据记UNKNOWN并保持占用；核对实际停止后审计释放",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "E10",
+      "steps": "带usage的Chat与Messages、缓存命中、部分样本、重复累计样本",
+      "expected": "客户端与后台同口径核对；缓存不重复计量；Messages初始0不冒充最终消耗",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "E11",
+      "steps": "图片声明后发送合法图片、超大图片、历史图片回放",
+      "expected": "验证真实模型图片能力和请求上限；不支持时明确拒绝；Files路径不绕过入口",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "E12",
+      "steps": "一组共享设备部署两个模型，与独立第二组比较",
+      "expected": "共享池总占用统一；独立池互不抢许可；具体装载/切换由推理部署管理，不靠网关假定",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "F01",
+      "steps": "两业务副本，共用PostgreSQL，池上限1；并发申请100/500/1000个不同callId",
+      "expected": "全副本合计占用≤1；WAITING不超过配置；超限明确429；无丢票据、超发",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "F02",
+      "steps": "U1大量排队，U2/U3随后提交；逐个完成推理",
+      "expected": "用户轮转和每人限额生效；统计使用真实票据，不仅看队列排序",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "F03",
+      "steps": "获准后不执行，超过30秒；等待超过配置期限",
+      "expected": "未消费许可可回收；WAITING到期退出；旧许可不能迟到消费",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "F04",
+      "steps": "运行中杀业务副本、再启动；另副本继续查状态",
+      "expected": "状态持久；没有请求重放；到执行期限进入UNKNOWN，不能盲目释放",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "F05",
+      "steps": "分别中断数据库、推理服务、客户端网络，恢复后检查队列/账本",
+      "expected": "数据库不可用失败关闭；未发送与可能发送区分；不重复写账本",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "F06",
+      "steps": "模拟服务做平台压力，真实NPU另做并发阶梯；混合长短上下文",
+      "expected": "不以1000活跃任务推导1000推理并发；按实测内存/错误/延迟定容量",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "F07",
+      "steps": "保持混合任务2小时并观察一个工作日；定期看队列、连接、线程、DB锁和内存",
+      "expected": "没有长期增长或泄漏；拒绝/超时/UNKNOWN有解释与处置；所有等待有上限",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "F08",
+      "steps": "测试库快照恢复，切换恢复世代；旧副本仍尝试派发或回写",
+      "expected": "旧进程被恢复栅栏拒绝；新服务不重复执行；凭证/授权符合恢复策略",
+      "status": "NOT_RUN",
+      "actual": "",
+      "evidence": [],
+      "defect": null
+    },
+    {
+      "id": "EP01",
+      "status": "NOT_RUN",
+      "note": ""
+    },
+    {
+      "id": "EP02",
+      "status": "NOT_RUN",
+      "note": ""
+    },
+    {
+      "id": "EP03",
+      "status": "NOT_RUN",
+      "note": ""
+    },
+    {
+      "id": "EP04",
+      "status": "NOT_RUN",
+      "note": ""
+    },
+    {
+      "id": "EP05",
+      "status": "NOT_RUN",
+      "note": ""
+    },
+    {
+      "id": "EP06",
+      "status": "NOT_RUN",
+      "note": ""
+    },
+    {
+      "id": "EP07",
+      "status": "NOT_RUN",
+      "note": ""
+    },
+    {
+      "id": "EP08",
+      "status": "NOT_RUN",
+      "note": ""
+    },
+    {
+      "id": "EP09",
+      "status": "NOT_RUN",
+      "note": ""
+    },
+    {
+      "id": "EP10",
+      "status": "NOT_RUN",
+      "note": ""
+    }
+  ],
+  "signoff": null
+}

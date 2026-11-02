@@ -1,0 +1,10 @@
+[Unit]
+Description=Renew funnywork HTTPS certificate over IPv4
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+EnvironmentFile=/etc/funnywork/site.env
+Type=oneshot
+ExecStart=/usr/bin/python3 /usr/local/lib/funnywork/certbot-ipv4.py renew --cert-name ${FUNNYWORK_REGIONAL_HOST} --quiet
+TimeoutStartSec=15min

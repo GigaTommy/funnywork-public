@@ -1,0 +1,17 @@
+overrides:
+  postcss: 8.5.32
+  vite: 7.3.7
+  follow-redirects: 1.16.2
+  'esbuild@>=0.27 <0.28': 0.28.2
+  'postcss-selector-parser@^6': 6.1.5
+  'minimatch@>=9 <11': 11.0.3
+  rollup: 4.62.2
+  '@iconify/json': 2.2.530
+allowBuilds:
+  esbuild: true
+  '@parcel/watcher': true
+registry: https://registry.npmjs.org
+preferOffline: true
+verifyDepsBeforeRun: error
+fetchTimeout: 300000
+enableGlobalVirtualStore: false

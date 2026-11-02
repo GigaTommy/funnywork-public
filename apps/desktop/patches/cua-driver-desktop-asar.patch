@@ -1,0 +1,18 @@
+diff --git a/dist/native/node-runtime.js b/dist/native/node-runtime.js
+--- a/dist/native/node-runtime.js
++++ b/dist/native/node-runtime.js
+@@ -1,6 +1,13 @@
+ import { createRequire } from "node:module";
+ import { dirname, join } from "node:path";
+-import { resolveLibPath } from "@ubjs/node/typescript/dist/resolve-lib.js";
++import { resolveLibPath as resolveNativeLibPath } from "@ubjs/node/typescript/dist/resolve-lib.js";
++// OS library loaders cannot read Electron's virtual ASAR filesystem.
++function resolveLibPath(options) {
++    const library = resolveNativeLibPath(options);
++    return process.versions.electron
++        ? library.replace(/\.asar([\\/])/u, ".asar.unpacked$1")
++        : library;
++}
+ const FfiType = {
+     UInt8: { tag: "UInt8" },
+     Int8: { tag: "Int8" },

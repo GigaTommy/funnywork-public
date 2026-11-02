@@ -1,0 +1,11 @@
+import {createApp,ref} from 'vue';
+import ElementPlus from 'element-plus';
+import 'element-plus/dist/index.css';
+import 'element-plus/theme-chalk/dark/css-vars.css';
+import '../../src/assets/styles/funnywork.scss';
+import ScopeSettings from '../../src/views/funnyworker/TaskScopeSettings.vue';
+import Tasks from '../../src/views/funnyworker/ManagementTasks.vue';
+import {mode} from './fixture';
+import {writeTaskCenterContext,type TaskCenterContext} from '../../src/utils/task-center-context';
+const app=createApp({components:{Tasks,ScopeSettings},setup(){const routeContext=ref(Object.fromEntries(new URLSearchParams(location.search)));addEventListener('popstate',()=>{routeContext.value=Object.fromEntries(new URLSearchParams(location.search));});function saveContext(value:TaskCenterContext){const query=writeTaskCenterContext(routeContext.value,value);const search=new URLSearchParams(query).toString();if(search!==location.search.slice(1))history.pushState(null,'',location.pathname+(search?'?'+search:''));routeContext.value=query;}const view=ref('tasks'),dark=ref(false);function toggle(){dark.value=!dark.value;document.documentElement.classList.toggle('dark',dark.value);}return{mode,toggle,view,routeContext,saveContext};},template:`<main style="padding:20px"><nav style="display:flex;gap:16px;margin-bottom:20px"><strong>隔离组件验收 · 虚构数据</strong><button @click="toggle">切换浅深色</button><label>页面 <select v-model="view"><option value="tasks">组织任务</option><option value="scope">管理范围</option></select></label><label>接口状态 <select v-model="mode"><option value="normal">正常</option><option value="slow">慢请求</option><option value="empty">空数据</option><option value="failure">读取失败</option><option value="denied">权限撤销</option><option value="lost-command">命令提交后响应丢失</option></select></label></nav><Tasks :route-context="routeContext" @context="saveContext" v-if="view==='tasks'" actor-key="task-center-fixture" :can-input="true" :can-artifacts="true" :can-operate="true" :can-configure="true" /><ScopeSettings v-else /></main>`});
+app.use(ElementPlus);app.mount('#app');

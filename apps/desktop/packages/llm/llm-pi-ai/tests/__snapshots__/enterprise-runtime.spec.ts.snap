@@ -1,0 +1,303 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`groups CHAT_COMPLETIONS models by maker through the Loader while binding each selection to its deployment 1`] = `
+{
+  "models": [
+    {
+      "id": "model-1",
+      "name": "企业模型",
+    },
+    {
+      "id": "model-2",
+      "name": "Second deployment",
+    },
+  ],
+  "providers": [
+    {
+      "id": "enterprise-openai",
+      "name": "OpenAI",
+    },
+    {
+      "id": "enterprise-deepseek",
+      "name": "DeepSeek",
+    },
+  ],
+}
+`;
+
+exports[`groups MESSAGES models by maker through the Loader while binding each selection to its deployment 1`] = `
+{
+  "models": [
+    {
+      "id": "model-1",
+      "name": "企业模型",
+    },
+    {
+      "id": "model-2",
+      "name": "Second deployment",
+    },
+  ],
+  "providers": [
+    {
+      "id": "enterprise-openai",
+      "name": "OpenAI",
+    },
+    {
+      "id": "enterprise-deepseek",
+      "name": "DeepSeek",
+    },
+  ],
+}
+`;
+
+exports[`publishes CHAT_COMPLETIONS deepseek-flash efforts and binds each request to its selected effort 1`] = `
+{
+  "model": "deepseek-flash",
+  "protocol": "CHAT_COMPLETIONS",
+  "reasoning": {
+    "defaultEffort": "high",
+    "efforts": [
+      {
+        "id": "off",
+        "name": "Off",
+      },
+      {
+        "id": "low",
+        "name": "Low",
+      },
+      {
+        "id": "high",
+        "name": "High",
+      },
+      {
+        "id": "max",
+        "name": "Max",
+      },
+    ],
+  },
+  "requests": [
+    {
+      "effort": undefined,
+      "model": "deepseek-flash",
+      "thinking": {
+        "type": "disabled",
+      },
+    },
+    {
+      "effort": "low",
+      "model": "deepseek-flash",
+      "thinking": {
+        "type": "enabled",
+      },
+    },
+    {
+      "effort": "high",
+      "model": "deepseek-flash",
+      "thinking": {
+        "type": "enabled",
+      },
+    },
+    {
+      "effort": "max",
+      "model": "deepseek-flash",
+      "thinking": {
+        "type": "enabled",
+      },
+    },
+  ],
+}
+`;
+
+exports[`publishes CHAT_COMPLETIONS deepseek-v4-pro efforts and binds each request to its selected effort 1`] = `
+{
+  "model": "deepseek-v4-pro",
+  "protocol": "CHAT_COMPLETIONS",
+  "reasoning": {
+    "defaultEffort": "high",
+    "efforts": [
+      {
+        "id": "off",
+        "name": "Off",
+      },
+      {
+        "id": "low",
+        "name": "Low",
+      },
+      {
+        "id": "high",
+        "name": "High",
+      },
+      {
+        "id": "max",
+        "name": "Max",
+      },
+    ],
+  },
+  "requests": [
+    {
+      "effort": undefined,
+      "model": "deepseek-v4-pro",
+      "thinking": {
+        "type": "disabled",
+      },
+    },
+    {
+      "effort": "low",
+      "model": "deepseek-v4-pro",
+      "thinking": {
+        "type": "enabled",
+      },
+    },
+    {
+      "effort": "high",
+      "model": "deepseek-v4-pro",
+      "thinking": {
+        "type": "enabled",
+      },
+    },
+    {
+      "effort": "max",
+      "model": "deepseek-v4-pro",
+      "thinking": {
+        "type": "enabled",
+      },
+    },
+  ],
+}
+`;
+
+exports[`publishes MESSAGES deepseek-flash efforts and binds each request to its selected effort 1`] = `
+{
+  "model": "deepseek-flash",
+  "protocol": "MESSAGES",
+  "reasoning": {
+    "defaultEffort": "high",
+    "efforts": [
+      {
+        "description": "Use for simple tasks that do not need reasoning.",
+        "id": "off",
+        "name": "Off",
+      },
+      {
+        "description": "Prefer for routine or latency-sensitive tasks.",
+        "id": "low",
+        "name": "Low",
+      },
+      {
+        "description": "The default balance for most tasks.",
+        "id": "high",
+        "name": "High",
+      },
+      {
+        "description": "Reserve for the hardest quality-first tasks.",
+        "id": "max",
+        "name": "Max",
+      },
+    ],
+  },
+  "requests": [
+    {
+      "effort": undefined,
+      "model": "deepseek-flash",
+      "thinking": {
+        "type": "disabled",
+      },
+    },
+    {
+      "effort": {
+        "effort": "low",
+      },
+      "model": "deepseek-flash",
+      "thinking": {
+        "type": "enabled",
+      },
+    },
+    {
+      "effort": {
+        "effort": "high",
+      },
+      "model": "deepseek-flash",
+      "thinking": {
+        "type": "enabled",
+      },
+    },
+    {
+      "effort": {
+        "effort": "max",
+      },
+      "model": "deepseek-flash",
+      "thinking": {
+        "type": "enabled",
+      },
+    },
+  ],
+}
+`;
+
+exports[`publishes MESSAGES deepseek-v4-pro efforts and binds each request to its selected effort 1`] = `
+{
+  "model": "deepseek-v4-pro",
+  "protocol": "MESSAGES",
+  "reasoning": {
+    "defaultEffort": "high",
+    "efforts": [
+      {
+        "description": "Use for simple tasks that do not need reasoning.",
+        "id": "off",
+        "name": "Off",
+      },
+      {
+        "description": "Prefer for routine or latency-sensitive tasks.",
+        "id": "low",
+        "name": "Low",
+      },
+      {
+        "description": "The default balance for most tasks.",
+        "id": "high",
+        "name": "High",
+      },
+      {
+        "description": "Reserve for the hardest quality-first tasks.",
+        "id": "max",
+        "name": "Max",
+      },
+    ],
+  },
+  "requests": [
+    {
+      "effort": undefined,
+      "model": "deepseek-v4-pro",
+      "thinking": {
+        "type": "disabled",
+      },
+    },
+    {
+      "effort": {
+        "effort": "low",
+      },
+      "model": "deepseek-v4-pro",
+      "thinking": {
+        "type": "enabled",
+      },
+    },
+    {
+      "effort": {
+        "effort": "high",
+      },
+      "model": "deepseek-v4-pro",
+      "thinking": {
+        "type": "enabled",
+      },
+    },
+    {
+      "effort": {
+        "effort": "max",
+      },
+      "model": "deepseek-v4-pro",
+      "thinking": {
+        "type": "enabled",
+      },
+    },
+  ],
+}
+`;

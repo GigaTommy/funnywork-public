@@ -1,0 +1,51 @@
+server:
+  address: ${FUNNYWORK_BIND_ADDRESS:127.0.0.1}
+  port: ${FUNNYWORK_PORT:8765}
+  error:
+    include-message: never
+spring:
+  datasource:
+    url: ${FUNNYWORK_DB_URL:jdbc:h2:file:./.local/funnyworker-java;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH;WRITE_DELAY=0}
+    username: ${FUNNYWORK_DB_USER:sa}
+    password: ${FUNNYWORK_DB_PASSWORD:}
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+  servlet:
+    multipart:
+      enabled: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+funnywork:
+  gateway-hosts: ${FUNNYWORK_GATEWAY_HOSTS:}
+  model-inference-enabled: ${FUNNYWORK_MODEL_INFERENCE_ENABLED:true}
+  model-budget-operator: ${FUNNYWORK_MODEL_BUDGET_OPERATOR:bootstrap-admin}
+  model-admission-calls-per-minute: ${FUNNYWORK_MODEL_ADMISSION_CALLS_PER_MINUTE:60}
+  model-inference-origins: ${FUNNYWORK_MODEL_INFERENCE_ORIGINS:}
+  model-inference-workers: ${FUNNYWORK_MODEL_INFERENCE_WORKERS:16}
+  model-probe-hosts: ${FUNNYWORK_MODEL_PROBE_HOSTS:}
+  mcp-hosts: ${FUNNYWORK_MCP_HOSTS:}
+  recovery-evidence-trust: ${FUNNYWORK_RECOVERY_EVIDENCE_TRUST:}
+  recovery-generation: ${FUNNYWORK_RECOVERY_GENERATION:initial}
+  recovery-isolation: ${FUNNYWORK_RECOVERY_ISOLATION:false}
+  require-node-certificate: ${FUNNYWORK_REQUIRE_NODE_CERTIFICATE:false}
+  enterprise-only-tenants: ${FUNNYWORK_ENTERPRISE_ONLY_TENANTS:}
+  computer-verifier-config: ${FUNNYWORK_COMPUTER_VERIFIER_CONFIG:}
+  identity-config: ${FUNNYWORK_IDENTITY_CONFIG:}
+  bootstrap-token: ${FUNNYWORK_BOOTSTRAP_TOKEN:}
+  scheduling-enabled: ${FUNNYWORK_SCHEDULING_ENABLED:true}
+  maintenance-repair-evidence-directory: ${FUNNYWORK_MAINTENANCE_REPAIR_EVIDENCE_DIRECTORY:}
+  lease-ms: 90000
+  reserve-ms: 30000
+  node-fresh-ms: 45000
+  max-attempts: 3
+  sync:
+    max-attachment-bytes: ${FUNNYWORK_SYNC_MAX_ATTACHMENT_BYTES:33554432}
+    max-account-attachment-bytes: ${FUNNYWORK_SYNC_MAX_ACCOUNT_ATTACHMENT_BYTES:1073741824}
+    max-account-attachment-objects: ${FUNNYWORK_SYNC_MAX_ACCOUNT_ATTACHMENT_OBJECTS:10000}

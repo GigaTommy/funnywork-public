@@ -1,0 +1,20 @@
+FunnyWork Android
+
+AndroidX / Jetpack Compose
+Copyright The Android Open Source Project
+https://android.googlesource.com/platform/frameworks/support/
+License: Apache-2.0 (Apache-2.0.txt)
+
+Kotlin and kotlinx.coroutines
+Copyright JetBrains s.r.o. and Kotlin Programming Language contributors
+https://github.com/JetBrains/kotlin
+https://github.com/Kotlin/kotlinx.coroutines
+License: Apache-2.0 (Apache-2.0.txt)
+
+OkHttp and Okio
+Copyright Square, Inc.
+https://github.com/square/okhttp
+https://github.com/square/okio
+License: Apache-2.0 (Apache-2.0.txt)
+
+Project source and brand artwork remain subject to the repository license and attribution.

@@ -1,0 +1,29 @@
+name: iOS compatibility
+on:
+  pull_request:
+    paths: ['apps/ios/**', 'scripts/build/build-ios.sh', '.github/workflows/ios-checks.yml']
+  push:
+    branches: [main]
+    paths: ['apps/ios/**', 'scripts/build/build-ios.sh', '.github/workflows/ios-checks.yml']
+permissions:
+  contents: read
+jobs:
+  iphone-ipad:
+    runs-on: macos-26
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - run: brew install xcodegen
+      - run: xcodegen generate --spec apps/ios/project.yml
+      - name: Unit tests and key UX flows on iPhone and iPad
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PYTHON'
+          import json, subprocess
+          rows = json.loads(subprocess.check_output(['xcrun', 'simctl', 'list', 'devices', 'available', '-j']))['devices']
+          devices = [d for key, group in rows.items() if 'iOS' in key for d in group]
+          for family in ['iPhone', 'iPad']:
+              device = next(d for d in devices if d['name'].startswith(family))
+              subprocess.run(['xcodebuild', 'test', '-project', 'apps/ios/FunnyWork.xcodeproj', '-scheme', 'FunnyWork', '-destination', 'platform=iOS Simulator,id=' + device['udid'], '-derivedDataPath', '.local/ios-ci', '-only-testing:FunnyWorkTests', '-only-testing:FunnyWorkUITests/ModelProviderUITests', '-only-testing:FunnyWorkUITests/BrandUXUITests', '-only-testing:FunnyWorkUITests/LoginUITests', '-only-testing:FunnyWorkUITests/MobileChatHomeUITests/testSourceSwitcherRemainsReachableInDarkAppearanceWithLargeText', 'CODE_SIGNING_ALLOWED=NO'], check=True)
+          PYTHON

@@ -1,0 +1,16 @@
+# Bilingual-pair consistency record for guide.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write docs/upgrade-guide/v0.2.0-rc.2/windows-office-runtime/guide.md
+/:
+  en: 6c8ad283434c9af9
+  zh: bcc7eac3ab062e7c
+/windows-desktop-authoring-runtime-directory:
+  en: 6671d8c47b37af4f
+  zh: 421a50b8de581b11
+/windows-desktop-authoring-runtime-directory/change:
+  en: c0680077abaa438a
+  zh: 2bd5876ed337c8ed
+/windows-desktop-authoring-runtime-directory/migration:
+  en: 2d9323b5f7e37d38
+  zh: 28e26e5e13901daa

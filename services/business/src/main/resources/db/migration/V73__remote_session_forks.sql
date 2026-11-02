@@ -1,0 +1,1 @@
+ALTER TABLE sync_devices ADD COLUMN session_forks BOOLEAN NOT NULL DEFAULT FALSE;

@@ -1,0 +1,9 @@
+import React,{useEffect,useRef,useState} from 'react';
+const messages:Record<string,string>={LOCAL_INPUT_INVALID:'请使用有效文本，最多256KB。',LOCAL_EXECUTION_BUSY:'已有本机任务正在处理。',LOCAL_EXECUTION_CANCELLED:'本机任务已停止。',LOCAL_EXECUTION_TIMEOUT:'处理超时，任务已停止。',LOCAL_SLOT_TIMEOUT:'本机仍有工作占用，请稍后重试。',EMPLOYEE_MODE_DISABLED:'请先启用员工助手。',NOT_CONNECTED:'请先登录工作空间。'};
+export function LocalTextTask({api,enabled}:{api:(name:string,...args:any[])=>Promise<any>;enabled:boolean}){
+ const [text,setText]=useState(''),[busy,setBusy]=useState(false),[result,setResult]=useState<any>(null),[message,setMessage]=useState('');const active=useRef(true),locked=useRef(false);
+ useEffect(()=>{active.current=true;return()=>{active.current=false;if(locked.current)api('cancelLocalTask').catch(()=>{});};},[]);
+ async function run(){if(locked.current||!enabled)return;locked.current=true;setBusy(true);setResult(null);setMessage('');try{const value=await api('localTextStats',{text});if(active.current)setResult(value);}catch(error:any){if(active.current)setMessage(messages[error.message]||'本机任务未完成，请重试。');}finally{locked.current=false;if(active.current)setBusy(false);}}
+ async function cancel(){try{await api('cancelLocalTask');}catch{if(active.current)setMessage('停止未完成，请重试。');}}
+ return <section aria-label="本机文本统计"><h4>本机文本统计</h4><p>在这台电脑统计文字和行数，最多256KB。输入不上传到服务端，不保存为历史任务。</p><textarea maxLength={262144} aria-label="待统计文本" value={text} disabled={busy||!enabled} onChange={event=>setText(event.target.value)} rows={3}/><div><button type="button" disabled={busy||!enabled} onClick={run}>在本机统计</button>{busy&&<button type="button" className="quiet" onClick={cancel}>停止本机任务</button>}</div>{busy&&<p role="status">正在等待本机空闲或处理文本…</p>}{result&&<p role="status">统计完成：{result.codePoints} 个字符，{result.lines} 行。</p>}{message&&<p role="status">{message}</p>}</section>;
+}

@@ -1,0 +1,49 @@
+{
+  "type": "design",
+  "designSystems": [],
+  "primaryDesignSystem": null,
+  "assets": {
+    "index": {
+      "versions": [
+        {
+          "path": "index.html",
+          "createdAt": "2026-10-08T04:07:57.670Z",
+          "status": "needs-review",
+          "subtitle": "纯白官网与真实 Mac/iPhone 场景素材"
+        }
+      ]
+    },
+    "privacy": {
+      "versions": [
+        {
+          "path": "privacy.html",
+          "createdAt": "2026-10-08T04:14:38.638Z",
+          "status": "needs-review",
+          "subtitle": "纯白隐私与服务说明"
+        }
+      ]
+    },
+    "brochure": {
+      "versions": [
+        {
+          "path": "brochure.html",
+          "createdAt": "2026-10-08T06:52:43.942Z",
+          "status": "needs-review",
+          "subtitle": "中英文企业产品资料与部署评估清单"
+        }
+      ]
+    },
+    "security": {
+      "versions": [
+        {
+          "path": "security.html",
+          "createdAt": "2026-10-10T03:22:50.605Z",
+          "status": "needs-review",
+          "subtitle": "企业安全架构与交付范围说明"
+        }
+      ]
+    }
+  },
+  "createdAt": "2026-10-08T04:07:57.674Z",
+  "updatedAt": "2026-10-10T03:22:50.611Z"
+}

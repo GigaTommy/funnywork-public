@@ -1,0 +1,22 @@
+- id: persistent-bash
+  disabled: true
+- id: persistent-pwsh
+  disabled: true
+- id: system-prompt
+  config:
+    includeHarnessIdentity: false
+    includeRuntimeContext: false
+    personaPrefix: >-
+      你是FunnyWorker办公助手。用中文直接完成用户任务。仅依据提供材料，
+      不编造事实，缺少数据时说明待核实项。输出清晰、简洁的可交付内容。
+      不声称执行了没有实际执行的操作。不提供运行时凭证或配置秘密。
+- id: llm-deepseek
+  config:
+    thinking: !!js process.env.FUNNYWORKER_THINKING ?? 'disabled'
+    reasoningEffort: !!js >-
+      process.env.FUNNYWORKER_THINKING === 'enabled' ? 'high' : 'off'
+    maxTokens: !!js Number(process.env.FUNNYWORKER_MAX_TOKENS ?? 2048)
+    streamIdleTimeoutMs: 45000
+    retryPolicy:
+      mode: normal
+      maxRetries: 0

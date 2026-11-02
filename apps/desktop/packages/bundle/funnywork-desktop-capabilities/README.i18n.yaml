@@ -1,0 +1,49 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/bundle/funnywork-desktop-capabilities/README.md
+/:
+  en: 57f00731a25c52db
+  zh: 14e44d5fa1ef4c1a
+/funnywork-desktop-controls:
+  en: be8873f0d3d78976
+  zh: 49457dbcf7e78443
+/funnywork-desktop-controls/summary:
+  en: 854dd3cc619f37d9
+  zh: b05f71c2e70f9608
+/funnywork-desktop-controls/table-of-contents:
+  en: d152484eb41ac6b4
+  zh: a134331a31395608
+/funnywork-desktop-controls/use-this-package:
+  en: 311bbfb5b78d6a7a
+  zh: 5a371d36d6b01dc4
+/funnywork-desktop-controls/understand-the-implementation:
+  en: 986444f2ba5e589b
+  zh: 50c65ce80a92194c
+/funnywork-desktop-controls/further-exploration:
+  en: 9905190a29e14de8
+  zh: 39c02871f96b008c
+/funnywork-desktop-controls/model-experience:
+  en: 215e7ba838619b7b
+  zh: a311da3843709f90
+/funnywork-desktop-controls/model-experience/browser-status-and-instructions:
+  en: 6fb83fdc4b35ad93
+  zh: 4bbd692f6c94b7d9
+/funnywork-desktop-controls/model-experience/browser-status-and-instructions/what-the-model-sees:
+  en: 58a8f0b281f2fa34
+  zh: 35189765002bc124
+/funnywork-desktop-controls/model-experience/browser-status-and-instructions/what-the-model-sees/unavailable-browser-instructions:
+  en: 37e8762dd0e4f026
+  zh: 7f567eb033a8dda8
+/funnywork-desktop-controls/model-experience/browser-status-and-instructions/token-effect:
+  en: c72bdcfbd22e25b4
+  zh: 112843ac0344605a
+/funnywork-desktop-controls/model-experience/browser-status-and-instructions/kv-cache-effect:
+  en: ef0bb4042b7bec3c
+  zh: 70cde02913215c4c
+/funnywork-desktop-controls/known-limitations-and-deferred-work:
+  en: 10ecf0467089eeb0
+  zh: e1b928f49ca68ba8
+/funnywork-desktop-controls/known-limitations-and-deferred-work/dev-note:
+  en: e67f633dc6fe7773
+  zh: 8ec3e73528ddb1a6

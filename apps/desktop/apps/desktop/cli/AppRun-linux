@@ -1,0 +1,14 @@
+#!/bin/sh
+# Preserve Chromium's normal sandbox requirements; unsupported hosts must fail closed.
+set -eu
+launcher=$0
+while [ -L "$launcher" ]; do
+  directory=$(CDPATH= cd -- "$(dirname -- "$launcher")" && pwd -P)
+  target=$(readlink "$launcher")
+  case "$target" in
+    /*) launcher=$target ;;
+    *) launcher=$directory/$target ;;
+  esac
+done
+application=$(CDPATH= cd -- "$(dirname -- "$launcher")" && pwd -P)
+exec "$application/funnywork" "$@"

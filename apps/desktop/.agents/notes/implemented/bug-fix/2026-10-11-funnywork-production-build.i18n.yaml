@@ -1,0 +1,22 @@
+# Bilingual-pair consistency record for 2026-10-11-funnywork-production-build.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write .agents/notes/implemented/bug-fix/2026-10-11-funnywork-production-build.md
+/agent-note-funnywork-distribution-branding:
+  en: 00950ef6ddadb6b9
+  zh: 37c30904188fa21a
+/agent-note-funnywork-distribution-branding/problem:
+  en: 1f1698679cd4bb4f
+  zh: 7f74e3418dc97abc
+/agent-note-funnywork-distribution-branding/decision:
+  en: 7870133557746d04
+  zh: f124b4924ffc923f
+/agent-note-funnywork-distribution-branding/validation:
+  en: 590a219e91a79685
+  zh: d0c1e6100261b1d3
+/agent-note-funnywork-distribution-branding/alternatives-considered:
+  en: 95040287b6eab8fb
+  zh: 192384964b9308aa
+/agent-note-funnywork-distribution-branding/consequences:
+  en: acbf4070bd4e7906
+  zh: 7a0d1e62ec05684e

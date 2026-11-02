@@ -1,0 +1,14 @@
+{
+  "type": "question",
+  "title": "恢复已有工作区",
+  "message": "发现与此账号名关联的本地工作区。",
+  "detail": "服务：https://funnywork.funnypixelsapp.com\n当前登录账号：name\n仅当这些对话和设置属于当前账号时恢复。已有文件会保留在原位置。",
+  "checkboxLabel": "我确认这些工作区数据属于当前登录账号。",
+  "checkboxChecked": false,
+  "buttons": [
+    "恢复工作区",
+    "取消"
+  ],
+  "defaultId": 1,
+  "cancelId": 1
+}

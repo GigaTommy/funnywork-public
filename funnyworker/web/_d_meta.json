@@ -1,0 +1,18 @@
+{
+  "type": "design",
+  "designSystems": [],
+  "primaryDesignSystem": null,
+  "assets": {
+    "FunnyWorker 管理网站与员工客户端": {
+      "versions": [
+        {
+          "path": "index.html",
+          "createdAt": "2026-10-01T02:48:46.710Z",
+          "status": "needs-review"
+        }
+      ]
+    }
+  },
+  "createdAt": "2026-10-01T02:48:46.716Z",
+  "updatedAt": "2026-10-01T02:48:46.716Z"
+}

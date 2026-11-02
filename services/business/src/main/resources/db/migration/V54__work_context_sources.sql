@@ -1,0 +1,1 @@
+CREATE TABLE employee_context_sources(task_id VARCHAR(64) NOT NULL,source_task_id VARCHAR(64) NOT NULL,artifact_id VARCHAR(64) NOT NULL,artifact_version INTEGER NOT NULL,PRIMARY KEY(task_id,artifact_id,artifact_version));

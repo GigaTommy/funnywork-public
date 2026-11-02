@@ -1,0 +1,49 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/extensions/funnywork-desktop-controls/README.md
+/:
+  en: 1e84dc2307ccb8a8
+  zh: 9cab135911997372
+/deepseek-ai-dsh-funnywork-desktop-controls:
+  en: 36ff57cb21060955
+  zh: 946f634aa9d0ba61
+/deepseek-ai-dsh-funnywork-desktop-controls/summary:
+  en: f5da4223ca48c2eb
+  zh: 070c85eea7667917
+/deepseek-ai-dsh-funnywork-desktop-controls/table-of-contents:
+  en: d152484eb41ac6b4
+  zh: a134331a31395608
+/deepseek-ai-dsh-funnywork-desktop-controls/use-this-package:
+  en: 46925f0d40575137
+  zh: 80bc090955643845
+/deepseek-ai-dsh-funnywork-desktop-controls/understand-the-implementation:
+  en: 41ea36a63c0bd0e2
+  zh: e5380ee2f1b5eb71
+/deepseek-ai-dsh-funnywork-desktop-controls/further-exploration:
+  en: 9905190a29e14de8
+  zh: 39c02871f96b008c
+/deepseek-ai-dsh-funnywork-desktop-controls/model-experience:
+  en: 215e7ba838619b7b
+  zh: a311da3843709f90
+/deepseek-ai-dsh-funnywork-desktop-controls/model-experience/browser-status-and-instructions:
+  en: 6fb83fdc4b35ad93
+  zh: 4bbd692f6c94b7d9
+/deepseek-ai-dsh-funnywork-desktop-controls/model-experience/browser-status-and-instructions/what-the-model-sees:
+  en: 4461fc107701d41a
+  zh: e9c775971315ac87
+/deepseek-ai-dsh-funnywork-desktop-controls/model-experience/browser-status-and-instructions/what-the-model-sees/unavailable-browser-instructions:
+  en: 37e8762dd0e4f026
+  zh: 7f567eb033a8dda8
+/deepseek-ai-dsh-funnywork-desktop-controls/model-experience/browser-status-and-instructions/token-effect:
+  en: c72bdcfbd22e25b4
+  zh: 112843ac0344605a
+/deepseek-ai-dsh-funnywork-desktop-controls/model-experience/browser-status-and-instructions/kv-cache-effect:
+  en: ef0bb4042b7bec3c
+  zh: 70cde02913215c4c
+/deepseek-ai-dsh-funnywork-desktop-controls/known-limitations-and-deferred-work:
+  en: 607d398859848b15
+  zh: 9922d8f63a595cc8
+/deepseek-ai-dsh-funnywork-desktop-controls/known-limitations-and-deferred-work/dev-note:
+  en: e67f633dc6fe7773
+  zh: 8ec3e73528ddb1a6

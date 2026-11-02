@@ -1,0 +1,12 @@
+{
+  "en": {
+    "storage": "FunnyWork secure account storage is unavailable. Unlock GNOME Keyring or KWallet in your desktop session, then restart FunnyWork.",
+    "updates": "Automatic updates are unavailable on Linux. Install a newer FunnyWork package manually.",
+    "platformAccount": "DeepSeek account sign-in and embedded account pages are unavailable on Linux. Use your FunnyWork account."
+  },
+  "zh-CN": {
+    "storage": "FunnyWork 无法安全保存账号。请在桌面会话中解锁 GNOME Keyring 或 KWallet，然后重启 FunnyWork。",
+    "updates": "Linux 暂不支持自动更新，请手动安装新版 FunnyWork 安装包。",
+    "platformAccount": "Linux 暂不支持 DeepSeek 账号登录与内嵌账号页面，请使用 FunnyWork 账号。"
+  }
+}

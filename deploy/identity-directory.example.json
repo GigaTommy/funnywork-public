@@ -1,0 +1,14 @@
+{
+  "sources": [
+    {
+      "id": "corporate",
+      "tenantId": "000000",
+      "authenticationUrl": "https://identity.example.com/funnyworker/authenticate",
+      "usersUrl": "https://identity.example.com/funnyworker/users",
+      "credentialRef": "FUNNYWORK_DIRECTORY_CORPORATE_TOKEN",
+      "departments": {
+        "external-engineering-id": 103
+      }
+    }
+  ]
+}

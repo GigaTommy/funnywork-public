@@ -1,0 +1,106 @@
+/* Shared brand tokens also flow into the embedded business components' shadow roots. */
+html:root {
+  --fw-surface: #f8f6f1;
+  --fw-input: #fffdfa;
+  --fw-line: #ddd9d2;
+  --fw-accent: #292724;
+  --fw-text: #292724;
+  --fw-muted: #6f6961;
+  --fw-soft: #eeebe5;
+  --fw-button-text: #ffffff;
+  --fw-error-bg: #fff0ed;
+  --fw-error-text: #a92d24;
+  --fw-warning-bg: #fff3dc;
+  --fw-warning-text: #805300;
+  color-scheme: light;
+}
+html:root.dark {
+  --fw-surface: #201f1d;
+  --fw-input: #2a2825;
+  --fw-line: #45413c;
+  --fw-accent: #eeeae2;
+  --fw-text: #eeeae2;
+  --fw-muted: #b6afa5;
+  --fw-soft: #36322d;
+  --fw-button-text: #24221f;
+  --fw-error-bg: #422b28;
+  --fw-error-text: #ffb4a9;
+  --fw-warning-bg: #403523;
+  --fw-warning-text: #f0cf96;
+  color-scheme: dark;
+}
+html:root, html:root.dark {
+  --el-bg-color-page: var(--fw-surface);
+  --el-bg-color: var(--fw-input);
+  --el-bg-color-overlay: var(--fw-input);
+  --el-text-color-primary: var(--fw-text);
+  --el-text-color-regular: var(--fw-text);
+  --el-text-color-secondary: var(--fw-muted);
+  --el-text-color-placeholder: var(--fw-muted);
+  --el-border-color: var(--fw-line);
+  --el-border-color-light: var(--fw-line);
+  --el-border-color-lighter: var(--fw-line);
+  --el-border-color-extra-light: var(--fw-line);
+  --el-fill-color: var(--fw-soft);
+  --el-fill-color-light: var(--fw-soft);
+  --el-fill-color-lighter: var(--fw-surface);
+  --el-fill-color-blank: var(--fw-input);
+  --menuBg: var(--fw-input);
+  --menuColor: var(--fw-muted);
+  --menuActiveText: var(--fw-text);
+  --menuHover: var(--fw-soft);
+  --subMenuBg: var(--fw-input);
+  --subMenuActiveText: var(--fw-text);
+  --subMenuHover: var(--fw-soft);
+  --subMenuTitleHover: var(--fw-soft);
+  --fixedHeaderBg: var(--fw-input);
+  --tableHeaderBg: var(--fw-soft);
+  --tableHeaderTextColor: var(--fw-text);
+  --app-surface-bg: var(--fw-input);
+  --app-surface-border: var(--fw-line);
+}
+html:root .el-button--primary:not(.is-plain):not(.is-text):not(.is-link):not(.is-dashed) {
+  --el-button-bg-color: var(--el-color-primary);
+  --el-button-border-color: var(--el-color-primary);
+  --el-button-hover-bg-color: var(--el-color-primary-light-2);
+  --el-button-hover-border-color: var(--el-color-primary-light-2);
+  --el-button-active-bg-color: var(--el-color-primary-dark-2);
+  --el-button-active-border-color: var(--el-color-primary-dark-2);
+  --el-button-text-color: var(--fw-button-text);
+  --el-button-hover-text-color: var(--fw-button-text);
+  --el-button-active-text-color: var(--fw-button-text);
+  --el-button-disabled-text-color: var(--fw-button-text);
+}
+.el-button:focus-visible, .el-drawer__close-btn:focus-visible, a:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--fw-accent);
+  outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+@media (max-width: 760px) {
+  .app-container .toolbar { flex-wrap: wrap; }
+  .app-container .el-form--inline .el-form-item { max-width: 100%; }
+  .app-container .el-date-editor--datetimerange { max-width: 100%; }
+}
+
+html:root .el-button--primary.is-plain, html:root .el-button--primary.is-dashed {
+  --el-button-bg-color: var(--fw-soft);
+  --el-button-border-color: var(--fw-line);
+  --el-button-text-color: var(--fw-text);
+  --el-button-hover-bg-color: var(--fw-accent);
+  --el-button-hover-border-color: var(--fw-accent);
+  --el-button-hover-text-color: var(--fw-button-text);
+  --el-button-active-bg-color: var(--fw-soft);
+  --el-button-active-border-color: var(--fw-accent);
+}
+html:root .el-alert--error.is-light { background: var(--fw-error-bg); color: var(--fw-error-text); }
+html:root .el-button:not(.el-button--primary):not(.el-button--success):not(.el-button--warning):not(.el-button--danger):not(.el-button--info):not(.is-text):not(.is-link) {
+  --el-button-bg-color: var(--fw-input);
+  --el-button-text-color: var(--fw-text);
+  --el-button-hover-bg-color: var(--fw-soft);
+  --el-button-hover-text-color: var(--fw-text);
+  --el-button-hover-border-color: var(--fw-accent);
+  --el-button-active-bg-color: var(--fw-soft);
+  --el-button-active-text-color: var(--fw-text);
+}

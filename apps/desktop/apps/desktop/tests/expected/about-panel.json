@@ -1,0 +1,80 @@
+{
+  "darwin:en-US": {
+    "menu": [
+      { "label": "About FunnyWork", "role": "about" },
+      { "type": "separator" }
+    ],
+    "options": {
+      "applicationName": "FunnyWork",
+      "applicationVersion": "1.0.0",
+      "version": "",
+      "copyright": "",
+      "iconPath": "<app icon>"
+    }
+  },
+  "darwin:zh-CN": {
+    "menu": [
+      { "label": "关于 FunnyWork", "role": "about" },
+      { "type": "separator" }
+    ],
+    "options": {
+      "applicationName": "FunnyWork",
+      "applicationVersion": "1.0.0",
+      "version": "",
+      "copyright": "",
+      "iconPath": "<app icon>"
+    }
+  },
+  "win32:zh-CN": {
+    "menu": [
+      { "label": "关于 FunnyWork" },
+      { "type": "separator" }
+    ],
+    "options": {
+      "applicationName": "FunnyWork",
+      "applicationVersion": "1.0.0",
+      "version": "",
+      "copyright": "",
+      "iconPath": "<app icon>"
+    }
+  },
+  "win32:en-US": {
+    "menu": [
+      { "label": "About FunnyWork" },
+      { "type": "separator" }
+    ],
+    "options": {
+      "applicationName": "FunnyWork",
+      "applicationVersion": "1.0.0",
+      "version": "",
+      "copyright": "",
+      "iconPath": "<app icon>"
+    }
+  },
+  "linux:en-US": {
+    "menu": [
+      { "label": "About FunnyWork", "role": "about" },
+      { "type": "separator" }
+    ],
+    "options": {
+      "applicationName": "FunnyWork",
+      "applicationVersion": "1.0.0",
+      "version": "",
+      "copyright": "",
+      "iconPath": "<app icon>"
+    }
+  },
+  "linux:zh-CN": {
+    "menu": [
+      { "label": "关于 FunnyWork", "role": "about" },
+      { "type": "separator" }
+    ],
+    "options": {
+      "applicationName": "FunnyWork",
+      "applicationVersion": "1.0.0",
+      "version": "",
+      "copyright": "",
+      "iconPath": "<app icon>"
+    }
+  }
+}

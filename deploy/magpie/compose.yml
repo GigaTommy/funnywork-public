@@ -1,0 +1,28 @@
+services:
+  magpie:
+    image: ghcr.io/yetone/magpie@sha256:f4ac8f840d3251dedcd79b232cc67ff0d332a8fb5541a71bdd9b6b842b402468
+    restart: unless-stopped
+    command: ["serve", "--web=0.0.0.0:3430"]
+    ports:
+      - "127.0.0.1:3425:3425"
+      - "127.0.0.1:3430:3430"
+    env_file: magpie.env
+    environment:
+      MAGPIE_ADDR: 0.0.0.0:3425
+      MAGPIE_NO_STATS: "1"
+    volumes:
+      - magpie-config:/config
+    security_opt:
+      - no-new-privileges:true
+    cap_drop: [ALL]
+    mem_limit: 1g
+    cpus: 1.0
+    pids_limit: 256
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  magpie-config:

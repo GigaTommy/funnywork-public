@@ -1,0 +1,7 @@
+# Add inside the existing HTTPS server. Preserve all API/auth locations.
+# Publish only the corresponding verified files under /srv/funnywork/site.
+location = /media/product/revenue-trend-en.png { root /srv/funnywork/site; try_files $uri =404; }
+location = /media/product/target-completion-en.png { root /srv/funnywork/site; try_files $uri =404; }
+location = /media/product/iphone-desktop-task-en.png { root /srv/funnywork/site; try_files $uri =404; }
+location = /media/product/iphone-chart-reading-en.png { root /srv/funnywork/site; try_files $uri =404; }
+location = /media/product/iphone-chart-preview-en.mp4 { root /srv/funnywork/site; try_files $uri =404; }

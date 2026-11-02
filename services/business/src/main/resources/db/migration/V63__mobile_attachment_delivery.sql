@@ -1,0 +1,1 @@
+ALTER TABLE sync_devices ADD COLUMN attachment_uploads BOOLEAN NOT NULL DEFAULT FALSE;

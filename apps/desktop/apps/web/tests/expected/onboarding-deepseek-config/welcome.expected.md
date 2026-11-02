@@ -1,0 +1,4 @@
+- dialog "开始使用 FunnyWork":
+  - heading "开始使用 FunnyWork" [level=2]
+  - paragraph: 说说你想做什么，FunnyWork 帮你把想法变成结果。选择一个文件夹，即可开始。更多选项可在设置中调整。
+  - button "继续"

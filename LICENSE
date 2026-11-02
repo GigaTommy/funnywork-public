@@ -1,0 +1,95 @@
+FunnyWork 源码可用非商业许可证 1.0
+FunnyWork Source-Available Non-Commercial License 1.0
+
+Copyright (c) 2026 GigaTommy and FunnyWorker contributors
+
+本许可证自随附本文件的软件版本发布之日起适用。其提供非商业使用许可；商业使用须另行取得书面商业授权。本许可证是自定义源码可用许可证，不是 MIT、AGPL 或经 OSI 批准的开源许可证。
+This License applies from publication of the software version accompanied by this file. It permits non-commercial use; commercial use requires a separate written commercial license. This is a custom source-available license, not MIT, AGPL, or an OSI-approved open-source license.
+
+1. 定义与适用范围 / Definitions and scope
+
+“软件”指随附本许可证、由 FunnyWork 项目相应权利人拥有或已取得按本许可证授权权利的自有代码、修改及文档。“许可方”指就相关部分拥有上述授权权利的权利人。本许可证不表示任何贡献者将其版权转让给其他贡献者或维护者。
+“Software” means the original code, modifications, and documentation accompanied by this License that the relevant FunnyWork rights holders own or are authorized to license under these terms. “Licensor” means the rights holders with such authority for the relevant portions. This License does not assign any contributor's copyright to another contributor or maintainer.
+
+第三方代码、资源、依赖及具有独立许可声明的文件或组件，按各自许可证适用，不受本许可证追加限制。主要上游包括 DeepSeek Harness、RuoYi-Vue-Plus 和 plus-ui，其 MIT 许可及原版权声明保留在对应组件内。具体来源及许可位置见 THIRD_PARTY_NOTICES.md。
+Third-party code, assets, dependencies, and files or components with separate license notices remain governed by their respective licenses, without additional restrictions from this License. Principal upstream projects include DeepSeek Harness, RuoYi-Vue-Plus, and plus-ui; their MIT licenses and original copyright notices are retained in the corresponding components. See THIRD_PARTY_NOTICES.md for sources and license locations.
+
+2. 非商业授权 / Non-commercial grant
+
+在遵守本许可证的前提下，许可方授予您全球、非独占、免许可费的许可，为下列非商业目的使用、复制、研究、修改软件，并按第4条分发软件及修改版本：
+Subject to this License, Licensor grants you a worldwide, non-exclusive, royalty-free license to use, copy, study, and modify the Software for the following non-commercial purposes, and to distribute it and modified versions under Section 4:
+
+(a) 自然人的个人学习、自我教育及无商业目的的个人研究；
+(a) Personal learning, self-education, and non-commercial personal research by individuals;
+
+(b) 教育或科研机构开展的非商业教学和学术研究，不包括为商业客户交付成果、企业委托研发或服务于商业产品的研究；
+(b) Non-commercial teaching and academic research by educational or research institutions, excluding deliverables for commercial clients, enterprise-commissioned development, or research supporting commercial products;
+
+(c) 非营利组织为自身非商业公益活动进行的使用和内部部署，不包括收费软件服务、商业代运营或为商业客户交付系统。
+(c) Use and internal deployment by nonprofit organizations for their own non-commercial public-benefit activities, excluding paid software services, commercial managed services, or system delivery to commercial clients.
+
+非营利身份或研究名义不改变实际用途的性质。与软件使用或服务交付无对价关系的普通捐赠、科研资助或公益经费，本身不构成商业使用；用于商业委托、收费服务或商业交付的资助仍属于商业使用。
+Nonprofit status or a research label does not change the actual purpose. General donations, research grants, or charitable funding that are not consideration for software use or service delivery do not by themselves constitute commercial use; funding for commercial commissions, paid services, or commercial deliverables remains commercial use.
+
+3. 商业使用与购买要求 / Commercial use and purchase requirement
+
+除第2条明确允许的非商业活动外，任何以商业利益、经营收入、客户交付或营利组织业务运营为目的的使用，均须在开始前通过官方渠道取得付费书面商业授权。商业使用包括：
+Except for the non-commercial activities expressly permitted by Section 2, any use for commercial advantage, operating revenue, client delivery, or the business operations of a for-profit organization requires a paid written commercial license obtained through official channels before use begins. Commercial use includes:
+
+(a) 营利企业及其员工、受托人为企业业务开展的内部部署、生产、研发、测试或内部服务，包括不对外收费的内部系统；
+(a) Internal deployment, production, development, testing, or internal services for a for-profit enterprise by the enterprise, its staff, or contractors, including internal systems that do not charge external fees;
+
+(b) 作为 SaaS、托管、API、平台、代运营或其他服务向客户、关联企业或公众提供商业功能，不论直接收费、捆绑收费、广告变现或通过其他方式获利；
+(b) Providing commercial functionality to customers, affiliates, or the public through SaaS, hosting, APIs, platforms, managed operations, or other services, whether monetized directly, through bundled fees, advertising, or otherwise;
+
+(c) 销售、出租、收费分发软件或衍生产品，将软件集成至商业产品，或者以软件实施商业咨询、定制开发、系统交付或收费培训。
+(c) Selling, renting, or distributing the Software or derivatives for a fee, integrating it into commercial products, or using it for commercial consulting, custom development, system delivery, or paid training.
+
+个人以雇员或受托人身份为营利组织工作时，适用该组织的商业使用规则。商业许可授予约定范围内全球、非独占、不可转让的使用权，主体、期限、数量、部署、SaaS、分发及支持范围，以双方书面商业授权确认书或订单为准，通用条款见 COMMERCIAL-LICENSE.txt。
+Individuals acting as employees or contractors for for-profit organizations are subject to the organization's commercial-use rules. The commercial grant provides worldwide, non-exclusive, non-transferable use rights within the agreed scope. The licensed entity, term, quantities, deployments, SaaS, distribution, and support scope are specified in a written commercial license confirmation or order accepted by both parties; general terms appear in COMMERCIAL-LICENSE.txt.
+
+本条不限制您仅依据第三方原许可证使用第三方代码的权利。
+This Section does not restrict your rights to use third-party code solely under its original license.
+
+4. 复制、修改和非商业分发 / Copying, modification, and non-commercial distribution
+
+您可为第2条目的分发软件源码或编译副本及其修改版本，条件是随附本许可证和全部适用版权、许可及第三方通知，标明修改事实，并使接收人知悉自有软件部分继续适用本许可证。修改版本的自有软件部分不得通过换名或添加其他许可规避本许可证的商业使用要求；独立第三方部分继续适用其原许可。
+You may distribute source or compiled copies and modified versions for Section 2 purposes if you include this License and all applicable copyright, license, and third-party notices, identify that modifications were made, and inform recipients that the project-owned portions remain governed by this License. Renaming or adding another license to modified project portions may not circumvent the commercial-use requirements; independent third-party portions retain their original licenses.
+
+5. 禁止行为与保留权利 / Restrictions and reserved rights
+
+您不得超出许可范围实施商业使用，不得未经许可方书面授权出售、转让、出租或再许可商业授权、授权凭证或许可证本身，也不得声称有权代表许可方签发商业授权。
+You may not engage in commercial use beyond the licensed scope, sell, transfer, rent, or sublicense a commercial authorization, entitlement credential, or the license itself without Licensor's written authorization, or claim authority to issue commercial licenses on Licensor's behalf.
+
+您不得删除、篡改或隐匿软件及随附文件中的版权、许可和来源声明，或将第三方代码冒称为独立原创。依法或依第三方许可证保留的权利不受本条限制。
+You may not remove, falsify, or conceal copyright, license, or attribution notices in the Software and accompanying materials, or misrepresent third-party code as original work. Rights preserved by mandatory law or third-party licenses are unaffected.
+
+未明确授予的权利由相应权利人保留。本许可证不授予商标、商号或标识的独立使用许可，也不授权以许可方或上游项目名义作出背书。
+All rights not expressly granted are reserved by their respective holders. This License grants no independent license to trademarks, trade names, or logos, and no authority to claim endorsement by Licensor or upstream projects.
+
+6. 按现状提供与责任限制 / As-is provision and limitation of liability
+
+在适用法律允许的最大范围内，软件按“现状”（AS IS）和“可获得”（AS AVAILABLE）提供，不提供任何明示、默示或法定担保，包括适销性、特定用途适用性、权利不侵害、持续可用性或无错误的担保。维护、支持、更新和服务承诺须另行书面约定。
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE IS PROVIDED “AS IS” AND “AS AVAILABLE”, WITHOUT EXPRESS, IMPLIED, OR STATUTORY WARRANTIES, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, CONTINUED AVAILABILITY, OR ERROR-FREE OPERATION. MAINTENANCE, SUPPORT, UPDATES, AND SERVICE COMMITMENTS REQUIRE A SEPARATE WRITTEN AGREEMENT.
+
+在同一法律允许范围内，许可方及贡献者不对因软件或其使用产生的直接、间接、附带、特殊、惩罚性或后果性损失、利润损失、业务中断或数据损失承担责任，无论基于合同、侵权或其他请求基础，亦无论是否被告知损失可能性。本条不排除或限制适用法律禁止排除或限制的责任或权利。
+TO THE SAME EXTENT PERMITTED BY LAW, LICENSOR AND CONTRIBUTORS ARE NOT LIABLE FOR DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, OR CONSEQUENTIAL LOSSES, LOST PROFITS, BUSINESS INTERRUPTION, OR DATA LOSS ARISING FROM THE SOFTWARE OR ITS USE, UNDER CONTRACT, TORT, OR ANY OTHER THEORY, EVEN IF ADVISED OF THE POSSIBILITY. THIS SECTION DOES NOT EXCLUDE OR LIMIT LIABILITY OR RIGHTS THAT APPLICABLE LAW PROHIBITS EXCLUDING OR LIMITING.
+
+7. 终止与既有许可 / Termination and existing licenses
+
+严重违反本许可证时，许可方可书面通知终止本许可证项下授权。对可补救违约，许可方给予通知送达后30日的补救期；逾期未补救时终止。未经授权的商业使用在取得授权前应立即停止，补救期不产生临时商业许可。终止后停止依赖本许可证使用和分发软件，并删除或返还受其覆盖的副本，法律要求保存的存档除外。第三方许可及他人依法取得的独立许可不因此终止。
+Licensor may terminate the grant under this License by written notice for material breach. For a remediable breach, Licensor allows 30 days after delivery of notice to cure; termination takes effect if uncured. Unauthorized commercial use must stop immediately until licensed; a cure period grants no temporary commercial permission. Upon termination, cease use and distribution under this License and delete or return covered copies, except archives required by law. Third-party licenses and others' independently and lawfully obtained licenses are unaffected.
+
+此前依法根据 MIT 或其他许可证获得的软件副本及相应权利，继续按该原许可证适用。本许可证不追溯撤销或限制这些权利，也不改变第三方代码的原许可。
+Copies and corresponding rights previously and lawfully obtained under MIT or another license remain governed by that original license. This License does not retroactively revoke or restrict those rights or change original licenses for third-party code.
+
+8. 其他与联系 / Miscellaneous and contact
+
+中文与英文用于表达同一条款；如有解释差异，以中文为准，但适用法律强制规定另有要求的除外。某条款无效不影响其余条款效力。商业授权经双方书面确认后成立；仅阅读本文件、提出询价或付款而未取得许可方确认，不产生商业授权。具体商业授权主体以书面确认书为准。
+The Chinese and English texts express the same terms. In case of interpretive differences, Chinese prevails unless mandatory law requires otherwise. An invalid provision does not affect the remaining provisions. A commercial authorization is formed upon written acceptance by both parties; merely reading this file, requesting a quotation, or paying without Licensor's confirmation does not create a commercial grant. The legal licensing entity is identified in the written confirmation.
+
+官方购买与联系 / Official purchase and contact:
+Website: https://funnywork.funnypixelsapp.com
+Email: support@funnypixelsapp.com
+Commercial terms: COMMERCIAL-LICENSE.txt
+Third-party notices: THIRD_PARTY_NOTICES.md

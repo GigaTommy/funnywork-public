@@ -1,0 +1,97 @@
+FunnyWork 商业授权通用条款 1.0
+FunnyWork Commercial License General Terms 1.0
+
+本文件规定 FunnyWork 自有软件的付费商业授权条件。授权以许可方与客户共同接受的书面授权确认书或订单为成立依据；本文件本身不是购买凭证。商业授权只涉及许可方拥有或有权商业授权的部分，第三方软件继续适用原许可证。
+This document sets out paid commercial licensing terms for FunnyWork's own software. A grant is established by a written license confirmation or order accepted by both Licensor and Customer; this file alone is not proof of purchase. The grant covers only portions Licensor owns or is authorized to license commercially. Third-party software remains governed by its original licenses.
+
+1. 主体与文件优先顺序 / Parties and precedence
+
+“许可方”为授权确认书载明并有权签约的自然人或法人；“客户”为其中载明的被许可主体。“授权软件”指确认书列明的版本、模块和交付物中许可方有权授权的部分。
+“Licensor” is the individual or legal entity identified in the confirmation and authorized to contract. “Customer” is the licensed entity identified there. “Licensed Software” means the portions Licensor is authorized to license within the versions, modules, and deliverables listed in the confirmation.
+
+适用的第三方许可证对第三方部分优先。双方明确约定的专项条款、授权确认书和本通用条款依此顺序适用于自有部分。商业授权在其明确覆盖范围内替代根 LICENSE 的非商业使用限制，其余公共许可及依法保留的权利不受影响。
+Applicable third-party licenses prevail for third-party portions. Expressly agreed special terms, the confirmation, and these general terms apply in that order to project-owned portions. The commercial grant replaces the non-commercial restriction in the root LICENSE within its express scope, without affecting other public licenses or rights preserved by law.
+
+2. 授权授予与使用范围 / Grant and scope of use
+
+在双方书面确认、客户支付约定费用并遵守协议的条件下，许可方在确认书约定期限内授予客户全球范围、非独占、不可转让、不可再许可的商业使用权。客户可在购买的主体、用户数、设备数、部署数及模块范围内安装、运行、复制必要副本、备份和为自身获准用途修改授权软件。
+Subject to written acceptance by both parties, payment of the agreed fees, and compliance with the agreement, Licensor grants Customer a worldwide, non-exclusive, non-transferable, non-sublicensable commercial license for the term stated in the confirmation. Customer may install, run, make necessary copies and backups, and modify the Licensed Software for its authorized purposes within purchased entity, user, device, deployment, and module limits.
+
+确认书须明确内部部署、对外 SaaS／托管／API 服务和向客户分发等用途中哪些获准。内部使用许可不自动包含对外服务或软件分发；SaaS 许可允许终端用户访问获准服务功能，不使终端用户取得软件再许可或源代码分发权。向客户交付源码或安装包、OEM 和渠道销售须在确认书中单列授权。
+The confirmation must specify which purposes are authorized: internal deployment, external SaaS/hosting/API services, and distribution to clients. Internal-use rights do not automatically include external services or software distribution. SaaS rights allow end users to access authorized service functionality, without sublicensing the software or granting source distribution rights. Delivery of source or installers to clients, OEM, and channel resale require express authorization in the confirmation.
+
+客户员工和承包商可仅代表客户在其授权范围内操作；客户对其遵守协议负责。关联公司不因关联关系自动成为被许可人，应列入确认书。授权的“全球范围”不免除适用的出口、进口或其他强制法律要求。
+Employees and contractors may operate solely on Customer's behalf within its licensed scope, and Customer is responsible for their compliance. Affiliates are not automatically licensees and must be listed in the confirmation. Worldwide scope does not waive applicable export, import, or other mandatory legal requirements.
+
+3. 费用、期限与交付 / Fees, term, and delivery
+
+费用、税费、付款节点、交付形式、生效日、到期日和续费条件由确认书约定。永久使用权、更新权和维护期限分别约定，不因支付一次费用自动取得永久更新或支持。未就某项用途或数量达成书面约定时，不产生该项授权。
+Fees, taxes, payment milestones, delivery form, effective and expiry dates, and renewal conditions are specified in the confirmation. Perpetual use, update rights, and maintenance periods are agreed separately; a one-time payment does not automatically purchase perpetual updates or support. No license arises for a purpose or quantity not agreed in writing.
+
+4. 版权、第三方与既有许可 / Copyright, third parties, and existing licenses
+
+授权不转让软件著作权。客户保留其原有材料和独立成果的权利；软件修改部分的权属及回授按确认书约定。客户应保留许可方及第三方在源码和随附文件中的版权、许可和来源声明。
+The grant does not transfer software copyright. Customer retains rights in its pre-existing materials and independent work; ownership and any license-back for software modifications are specified in the confirmation. Customer must retain Licensor's and third parties' copyright, license, and attribution notices in source and accompanying materials.
+
+DeepSeek Harness、RuoYi-Vue-Plus、plus-ui 及其他依赖的原许可继续适用。第三方许可已经给予客户的复制、修改、商业使用或分发权不因本协议缩减，也不以购买本商业许可为取得前提。此前依法取得的 MIT 或其他许可证副本继续按原条款使用。本协议收费对应许可方有权提供的自有软件授权及确认书列明的服务。
+Original licenses for DeepSeek Harness, RuoYi-Vue-Plus, plus-ui, and other dependencies continue to apply. Rights to copy, modify, use commercially, or distribute granted by third-party licenses are not reduced by this agreement and do not depend on buying this commercial license. Copies previously and lawfully obtained under MIT or another license remain governed by their original terms. Fees cover project-owned software rights Licensor is authorized to grant and services listed in the confirmation.
+
+5. 禁止行为 / Restrictions
+
+未经许可方书面授权，客户不得转售、转让、出租、出借或再许可授权、许可证凭证或许可本身，不得以许可方代理人身份签发授权；获准的软件产品分发与转售授权本身是两项不同权利。
+Without Licensor's written authorization, Customer may not resell, transfer, rent, lend, or sublicense the grant, entitlement credential, or license itself, or issue licenses as Licensor's agent. Authorized distribution of a software product and resale of the license itself are separate rights.
+
+客户不得超出主体、数量、用途或期限使用授权软件，不得删除、篡改或隐匿版权、许可和来源声明，不得冒称软件或上游代码的原作者。本条不限制第三方许可证或适用法律不可排除的权利；商标、品牌或 OEM 展示方式需要另行书面约定。
+Customer may not use the Licensed Software beyond licensed entities, quantities, purposes, or term, remove, falsify, or conceal copyright, license, or attribution notices, or misrepresent authorship of the software or upstream code. This Section does not restrict rights under third-party licenses or mandatory law. Trademark, branding, or OEM presentation requires separate written agreement.
+
+6. 支持与第三方服务 / Support and third-party services
+
+安装、升级、维护、响应时限、服务级别、定制开发和数据处理义务，仅在双方另有书面约定时提供。模型供应商、云服务、应用商店及其他第三方服务的费用和使用条件由相应合同确定，不包含在软件授权费用内，除非确认书明确列入。
+Installation, updates, maintenance, response times, service levels, custom development, and data-processing obligations are provided only as separately agreed in writing. Fees and conditions for model providers, cloud services, app stores, and other third-party services follow their respective contracts and are excluded from the software license fee unless expressly included in the confirmation.
+
+7. 按现状提供与担保 / As-is provision and warranties
+
+除双方书面明确约定的担保外，在适用法律允许的最大范围内，授权软件按“现状”（AS IS）和“可获得”（AS AVAILABLE）提供，无任何明示、默示或法定担保，包括适销性、特定用途适用性、权利不侵害、持续可用或无错误。已明确约定的书面担保不受本条否定。
+EXCEPT FOR WARRANTIES EXPRESSLY AGREED IN WRITING, AND TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED SOFTWARE IS PROVIDED “AS IS” AND “AS AVAILABLE”, WITHOUT EXPRESS, IMPLIED, OR STATUTORY WARRANTIES, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, CONTINUED AVAILABILITY, OR ERROR-FREE OPERATION. THIS SECTION DOES NOT NEGATE EXPRESS WRITTEN WARRANTIES.
+
+8. 责任限制 / Limitation of liability
+
+除双方书面另有约定外，在适用法律允许的最大范围内，许可方及贡献者不对因授权软件或其使用、无法使用、故障或中断产生的直接、间接、附带、特殊、惩罚性或后果性损失、利润损失或数据损失承担责任，无论基于合同、侵权或其他基础，亦无论是否被告知损失可能性。本条不免除许可方明确承担的退款或其他付款义务，也不排除或限制适用法律禁止排除或限制的责任及权利。
+UNLESS OTHERWISE AGREED IN WRITING AND TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, LICENSOR AND CONTRIBUTORS ARE NOT LIABLE FOR DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, OR CONSEQUENTIAL LOSSES, LOST PROFITS, OR DATA LOSS ARISING FROM THE LICENSED SOFTWARE, ITS USE, INABILITY TO USE, FAILURE, OR INTERRUPTION, UNDER CONTRACT, TORT, OR ANY OTHER THEORY, EVEN IF ADVISED OF THE POSSIBILITY. THIS SECTION DOES NOT REMOVE EXPRESS REFUND OR OTHER PAYMENT OBLIGATIONS, OR EXCLUDE OR LIMIT LIABILITY OR RIGHTS THAT APPLICABLE LAW PROHIBITS EXCLUDING OR LIMITING.
+
+9. 终止与终止后处理 / Termination and its effects
+
+期限届满或依确认书终止时，客户应停止超出仍有效授权的使用。对重大且可补救的违约，守约方可书面通知并给予30日补救期，逾期未补救可终止协议。授权范围外的商业使用在取得授权前须立即停止，补救期不扩展许可。
+Upon expiry or termination under the confirmation, Customer must cease use beyond any license that remains valid. For a material, remediable breach, the non-breaching party may give written notice and 30 days to cure, and terminate if uncured. Commercial use outside the licensed scope must stop immediately until licensed; a cure period does not expand the grant.
+
+终止后客户应删除或返还仅依本协议持有的授权软件副本，法律要求的存档可留存但不得继续运行。依法独立持有的第三方和既有公共许可副本不受影响。已发生的付款义务、保密义务（如已约定）、知识产权归属及责任限制按其性质继续有效。
+After termination, Customer must delete or return copies held solely under this agreement; legally required archives may be retained but not operated. Independently and lawfully held third-party and existing publicly licensed copies are unaffected. Accrued payment obligations, agreed confidentiality duties, intellectual-property ownership, and liability limitations survive as appropriate to their nature.
+
+10. 法律、争议与完整协议 / Law, disputes, and entire agreement
+
+适用法律、争议解决机构、地点及正式通知地址由双方在确认书中明确约定；未约定时按有管辖权机构适用的法律确定。任何条款无效不影响其余条款效力。协议修改须双方书面确认。中文与英文表达相同条款，解释差异以中文为准，适用法律强制要求另有规定的除外。
+The confirmation must specify governing law, dispute-resolution body, venue, and formal notice addresses; if omitted, they are determined under law applied by the competent forum. Invalidity of one provision does not affect the rest. Amendments require written acceptance by both parties. Both languages express the same terms; Chinese prevails in interpretation unless mandatory law requires otherwise.
+
+11. 授权确认书必备项目 / Required license confirmation items
+
+双方签署或以可留存的电子方式共同确认下列项目后，形成具体商业授权：
+A specific commercial authorization is established when both parties sign or mutually accept the following items through a retainable electronic record:
+
+- 授权方与客户法定姓名／名称、注册地址、签约代表及联系地址；
+- Licensor's and Customer's legal names, registered addresses, representatives, and contact addresses;
+- 授权软件的版本或提交、模块、交付物及适用第三方许可清单；
+- Licensed version or commit, modules, deliverables, and applicable third-party license inventory;
+- 被许可主体及关联公司、用户／设备／部署数量、地域及允许用途；
+- Licensed entities and affiliates, user/device/deployment quantities, territory, and allowed purposes;
+- 内部部署、SaaS／托管／API、源码／安装包分发、OEM 的明确授权或排除；
+- Express inclusion or exclusion of internal deployment, SaaS/hosting/API, source/installer distribution, and OEM;
+- 费用、税费、付款、交付、生效、期限、续费和退款条件；
+- Fees, taxes, payment, delivery, effectiveness, term, renewal, and refund conditions;
+- 更新、维护、支持、定制成果及修改权属、保密和数据处理约定；
+- Update, maintenance, support, custom-work and modification ownership, confidentiality, and data-processing terms;
+- 适用法律、争议解决方式、正式通知地址及双方接受记录。
+- Governing law, dispute resolution, formal notice addresses, and records of both parties' acceptance.
+
+官方购买与联系 / Official purchase and contact:
+Website: https://funnywork.funnypixelsapp.com
+Email: support@funnypixelsapp.com

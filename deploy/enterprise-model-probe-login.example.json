@@ -1,0 +1,15 @@
+{
+  "base_url": "https://model-api.example.internal/v1",
+  "protocol": "chat_completions",
+  "model": "replace-with-deployment-model-id",
+  "login": {
+    "url": "https://identity.example.internal/api/login",
+    "headers": {},
+    "body": {"username": "${FW_POC_USERNAME}", "password": "${FW_POC_PASSWORD}"},
+    "token_path": "data.access_token",
+    "header": "Authorization",
+    "prefix": "Bearer "
+  },
+  "models_path": "/models",
+  "timeout_seconds": 30
+}

@@ -1,0 +1,16 @@
+version: 1
+scenario: browser-use-playwright-text
+profile: headless
+composition: browser-use-playwright-text
+recording: authored
+header:
+  class: browser-use-playwright-text
+  pin: true
+replay:
+  override: true
+workspace:
+  setup: desktop-controls-profile
+environment:
+  ELECTRON_RUN_AS_NODE: '1'
+  PLAYWRIGHT_MCP_CDP_ENDPOINT: http://invalid.example:1
+  PLAYWRIGHT_MCP_USER_DATA_DIR: /snapshot/personal-profile-must-not-load

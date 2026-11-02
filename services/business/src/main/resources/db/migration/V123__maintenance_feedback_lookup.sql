@@ -1,0 +1,1 @@
+CREATE INDEX maintenance_intake_title_lookup ON maintenance_intakes(tenant_id,repository_id,platform,title,created_at);

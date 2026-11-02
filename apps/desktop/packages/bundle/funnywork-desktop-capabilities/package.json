@@ -1,0 +1,49 @@
+{
+  "name": "@deepseek-ai/dsh-funnywork-desktop-capabilities",
+  "description": "FunnyWork desktop browser and accessibility tools for text models",
+  "version": "0.2.1-rc.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GigaTommy/funnywork-public.git",
+    "directory": "apps/desktop/packages/bundle/funnywork-desktop-capabilities"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./src/*": "./src/*",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "locale/*.json",
+    "lib/index.js",
+    "cordis.patch.yml",
+    "lib/types/**/*.d.ts",
+    "LICENSE"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "@deepseek-ai/dsh-funnywork-desktop-controls": "workspace:*",
+    "@deepseek-ai/dsh-browser-use": "workspace:*",
+    "@deepseek-ai/dsh-computer-use": "workspace:*"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "workspace:~"
+  },
+  "devDependencies": {
+    "@deepseek-ai/dsh-app-boot": "workspace:*",
+    "@deepseek-ai/cordis": "workspace:~"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "private": true
+}

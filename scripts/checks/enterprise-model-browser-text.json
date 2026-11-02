@@ -1,0 +1,210 @@
+{
+  "brand": [
+    "FunnyWork",
+    "FunnyWork"
+  ],
+  "title": [
+    "模型检测",
+    "Model check"
+  ],
+  "auth": [
+    "统一认证地址（可选）",
+    "Sign-in URL (optional)"
+  ],
+  "chat": [
+    "模型对话页地址",
+    "Chat page URL"
+  ],
+  "start": [
+    "开始检测",
+    "Start check"
+  ],
+  "login": [
+    "登录",
+    "Sign in"
+  ],
+  "chatButton": [
+    "进入对话",
+    "Open chat"
+  ],
+  "stop": [
+    "停止",
+    "Stop"
+  ],
+  "scope": [
+    "检测范围",
+    "Checks"
+  ],
+  "multi_turn": [
+    "多轮",
+    "History"
+  ],
+  "streaming": [
+    "流式",
+    "Streaming"
+  ],
+  "structured": [
+    "JSON",
+    "JSON"
+  ],
+  "tools": [
+    "工具调用",
+    "Tool calls"
+  ],
+  "basic": [
+    "基本对话",
+    "Basic chat"
+  ],
+  "cost": [
+    "最多发送 6 次合成测试请求，计入模型用量。",
+    "Up to 6 synthetic requests. Model usage applies."
+  ],
+  "item": [
+    "检测项",
+    "Check"
+  ],
+  "result": [
+    "结果",
+    "Result"
+  ],
+  "details": [
+    "说明",
+    "Details"
+  ],
+  "openReport": [
+    "打开报告文件夹",
+    "Open report folder"
+  ],
+  "IDLE": [
+    "填写对话页地址后开始。",
+    "Enter the chat page URL to start."
+  ],
+  "STARTING": [
+    "正在打开测试浏览器…",
+    "Opening the test browser…"
+  ],
+  "LOGIN": [
+    "请在浏览器中登录。",
+    "Sign in in the browser window."
+  ],
+  "WAITING_CHAT": [
+    "请在浏览器中登录；登录后发送一条测试消息。",
+    "Sign in, then send one test message."
+  ],
+  "WAITING_MESSAGE": [
+    "登录后，发送一条不含业务信息的测试消息。",
+    "After sign-in, send one message without business data."
+  ],
+  "WAITING_REPLY": [
+    "等待当前回复结束…",
+    "Waiting for the current reply to finish…"
+  ],
+  "TESTING": [
+    "正在检测，请保留测试浏览器窗口。",
+    "Checking. Keep the test browser open."
+  ],
+  "COMPLETE": [
+    "检测完成，报告已保存。",
+    "Check complete. Report saved."
+  ],
+  "ADAPTER_REQUIRED": [
+    "已识别网页封装接口，待适配后继续检测。",
+    "A custom chat API was found. An adapter is needed to continue."
+  ],
+  "STOPPED": [
+    "已停止，测试浏览器数据已清理。",
+    "Stopped. Test browser data removed."
+  ],
+  "PROFILE_RETAINED": [
+    "已停止。浏览器数据未清理，请关闭测试窗口后再次点击停止。",
+    "Stopped. Close the test browser and click Stop again to remove its data."
+  ],
+  "PASS": [
+    "通过",
+    "Passed"
+  ],
+  "BLOCKED": [
+    "受阻",
+    "Blocked"
+  ],
+  "NOT_CONFIRMED": [
+    "未确认",
+    "Not confirmed"
+  ],
+  "NOT_TESTED": [
+    "未检测",
+    "Not tested"
+  ],
+  "BROWSER_NOT_FOUND": [
+    "未找到 Edge 或 Chrome，请先安装浏览器。",
+    "Edge or Chrome was not found. Install a browser first."
+  ],
+  "BROWSER_DEBUG_UNAVAILABLE": [
+    "无法连接测试浏览器。请检查浏览器是否允许自动化调试。",
+    "Cannot connect to the test browser. Check its automation policy."
+  ],
+  "BROWSER_DISCONNECTED": [
+    "测试浏览器已关闭，请重新开始。",
+    "The test browser closed. Start again."
+  ],
+  "INVALID_PAGE_ADDRESS": [
+    "请输入完整的 http:// 或 https:// 页面地址。",
+    "Enter a complete http:// or https:// page URL."
+  ],
+  "LOCAL_OPERATION_FAILED": [
+    "操作未完成，请停止后重试。",
+    "The operation failed. Stop and try again."
+  ],
+  "TEST_TIMEOUT": [
+    "检测超时，请停止后重试。",
+    "The check timed out. Stop and retry."
+  ],
+  "AUTH_ADDRESS_EMPTY": [
+    "请先填写统一认证地址。",
+    "Enter a sign-in URL first."
+  ],
+  "PAGE_OPERATION_FAILED": [
+    "页面正在跳转，请稍候…",
+    "The page is navigating. Please wait…"
+  ],
+  "BROWSER_COMMAND_FAILED": [
+    "页面正在跳转，请稍候…",
+    "The page is navigating. Please wait…"
+  ],
+  "BROWSER_COMMAND_TIMEOUT": [
+    "浏览器响应超时，请停止后重试。",
+    "The browser timed out. Stop and retry."
+  ],
+  "AUTH_REQUIRED": [
+    "登录已失效，请重新登录。",
+    "Sign in again."
+  ],
+  "RATE_LIMITED": [
+    "请求受限，请稍后重试。",
+    "Rate limited. Try again later."
+  ],
+  "CROSS_ORIGIN_REQUIRES_EXPLICIT_OPTION": [
+    "跨域请求未获允许。",
+    "Cross-origin checking was not enabled."
+  ],
+  "RESPONSE_OR_NETWORK_ERROR": [
+    "请求或响应未通过校验。",
+    "The request or response could not be verified."
+  ],
+  "PAGE_TEST_FAILED": [
+    "页面检测未完成。",
+    "The page check did not complete."
+  ],
+  "CUSTOM_ADAPTER_REQUIRED": [
+    "接口信息已保存，需适配网页专用协议。",
+    "Interface details saved. A custom protocol adapter is needed."
+  ],
+  "BROWSER_DATA_IN_USE": [
+    "请先关闭测试窗口并点击停止，清理上次数据。",
+    "Close the test browser and click Stop to clean up the previous session."
+  ],
+  "SESSION_ALREADY_RUNNING": [
+    "请先停止当前检测。",
+    "Stop the current check first."
+  ]
+}

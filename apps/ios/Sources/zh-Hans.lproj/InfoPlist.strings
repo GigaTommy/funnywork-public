@@ -1,0 +1,9 @@
+"CFBundleDisplayName" = "FunnyWork";
+"CFBundleName" = "FunnyWork";
+
+"NSMicrophoneUsageDescription" = "使用麦克风输入消息。";
+"NSSpeechRecognitionUsageDescription" = "将语音转为文字，音频可能由 Apple 处理。";
+
+"NSCameraUsageDescription" = "扫描二维码或拍摄照片。";
+
+"NSPhotoLibraryAddUsageDescription" = "保存你选择的图片。";

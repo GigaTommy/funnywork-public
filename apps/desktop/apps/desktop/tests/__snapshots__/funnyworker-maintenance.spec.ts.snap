@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`native candidate pushes the checked commit and records a stable report 1`] = `
+{
+  "checks": [
+    {
+      "exitCode": 0,
+      "id": "menu",
+      "output": "",
+    },
+  ],
+  "epoch": 1,
+  "modelUsage": {
+    "cachedInputTokens": null,
+    "calls": 1,
+    "inputTokens": 20,
+    "outputTokens": 5,
+  },
+  "outcome": "CANDIDATE_READY",
+  "prUrl": "https://github.com/example/project/pull/42",
+  "resultSha": "<checked-commit>",
+  "specHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "summary": "FunnyWork native session maintenance-problem-1-v1-e1 submitted the candidate with required checks; management acceptance is pending.",
+}
+`;

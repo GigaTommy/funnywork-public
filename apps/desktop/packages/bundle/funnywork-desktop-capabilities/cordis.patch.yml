@@ -1,0 +1,13 @@
+- insert:
+    - id: funnywork-browser-use
+      name: '@deepseek-ai/dsh-browser-use'
+    - id: funnywork-computer-use
+      name: '@deepseek-ai/dsh-computer-use'
+    - id: funnywork-desktop-capabilities
+      name: '@deepseek-ai/dsh-funnywork-desktop-controls'
+      config:
+        browser:
+          enabled: true
+          headless: false
+        computer:
+          enabled: true

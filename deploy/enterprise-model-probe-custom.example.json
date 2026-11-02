@@ -1,0 +1,13 @@
+{
+  "base_url": "https://model-service.example.internal",
+  "protocol": "custom",
+  "model": "replace-with-service-model-id",
+  "headers": {"X-API-Key": "${FW_POC_API_TOKEN}"},
+  "models_path": null,
+  "custom": {
+    "path": "/api/chat",
+    "body": {"modelCode": "{{model}}", "history": "{{messages}}", "outputLimit": "{{max_tokens}}"},
+    "text_path": "data.answer"
+  },
+  "timeout_seconds": 30
+}

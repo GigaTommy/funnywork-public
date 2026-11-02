@@ -1,0 +1,2 @@
+    # Add inside the existing website server block; retain all API and admin locations.
+    location = /assets/gigi-avatar.jpg { root /srv/funnywork/site; try_files $uri =404; }

@@ -1,0 +1,21 @@
+{
+  "modelUsage": {
+    "calls": 0,
+    "inputTokens": 0,
+    "outputTokens": 0,
+    "cachedInputTokens": 0
+  },
+  "epoch": 1,
+  "specHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "outcome": "VERIFIED",
+  "resultSha": "<pinned-candidate>",
+  "prUrl": "https://github.com/example/project/pull/42",
+  "summary": "Original FunnyWork linux client checked pinned candidate <pinned-candidate>; no model was invoked.",
+  "checks": [
+    {
+      "id": "menu",
+      "exitCode": 0,
+      "output": ""
+    }
+  ]
+}

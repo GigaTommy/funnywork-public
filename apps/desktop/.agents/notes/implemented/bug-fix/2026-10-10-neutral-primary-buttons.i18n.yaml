@@ -1,0 +1,22 @@
+# Bilingual-pair consistency record for 2026-10-10-neutral-primary-buttons.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write .agents/notes/implemented/bug-fix/2026-10-10-neutral-primary-buttons.md
+/agent-note-neutral-primary-button-contrast:
+  en: 26fadcd46752ffad
+  zh: d5f4136b1a3fd27f
+/agent-note-neutral-primary-button-contrast/problem:
+  en: 389b90a0fef4ce55
+  zh: ccd0d1361407c25d
+/agent-note-neutral-primary-button-contrast/decision:
+  en: 6c8ed7060979f2fd
+  zh: 49111dadc01afa44
+/agent-note-neutral-primary-button-contrast/validation:
+  en: 14933523b113f935
+  zh: 99d69c837cf0b5af
+/agent-note-neutral-primary-button-contrast/alternatives-considered:
+  en: 2e19443655bb71a3
+  zh: ebe32ffc6698095e
+/agent-note-neutral-primary-button-contrast/consequences:
+  en: 124536a52b52aa43
+  zh: 2f42fac5d1060b5a

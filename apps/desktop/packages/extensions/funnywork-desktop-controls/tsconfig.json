@@ -1,0 +1,14 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": { "rootDir": "src", "outDir": "lib/types" },
+  "include": ["src"],
+  "references": [
+    { "path": "../../../vendor/cordis" },
+    { "path": "../../../vendor/schemastery" },
+    { "path": "../../core/tools" },
+    { "path": "../../core/system-prompt" },
+    { "path": "../../experimental/browser-use-playwright-mcp" },
+    { "path": "../../experimental/cua-macos" },
+    { "path": "../../experimental/computer-use-cua-driver-native" }
+  ]
+}

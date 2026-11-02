@@ -1,0 +1,16 @@
+    location = / { root /srv/funnywork/site; try_files /index.html =404; }
+    location = /index.html { root /srv/funnywork/site; try_files $uri =404; }
+    location = /privacy.html { root /srv/funnywork/site; try_files $uri =404; }
+    location = /security.html { root /srv/funnywork/site; try_files $uri =404; }
+    location = /styles.css { root /srv/funnywork/site; try_files $uri =404; }
+    location = /site.js { root /srv/funnywork/site; try_files $uri =404; }
+    location = /assets/brand-mark.png { root /srv/funnywork/site; try_files $uri =404; }
+    location = /media/product/admin-office.png { root /srv/funnywork/site; try_files $uri =404; }
+    location = /media/product/mac-quarterly-presentation.png { root /srv/funnywork/site; try_files $uri =404; }
+    location = /media/product/admin-home.png { root /srv/funnywork/site; try_files $uri =404; }
+    location = /media/product/mac-quarterly-chart.png { root /srv/funnywork/site; try_files $uri =404; }
+    location = /media/product/iphone-desktop-task.png { root /srv/funnywork/site; try_files $uri =404; }
+    location = /media/product/iphone-chart-preview.mp4 { root /srv/funnywork/site; try_files $uri =404; }
+    location = /media/product/revenue-trend.png { root /srv/funnywork/site; try_files $uri =404; }
+    location = /media/product/iphone-chart-reading.png { root /srv/funnywork/site; try_files $uri =404; }
+    location = /media/product/target-completion.png { root /srv/funnywork/site; try_files $uri =404; }

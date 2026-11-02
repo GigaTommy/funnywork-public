@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BootPage > draws the en brand before any plugin state arrives 1`] = `
+{
+  "logo": {
+    "alt": "",
+    "height": 64,
+    "width": 64,
+  },
+  "text": "FunnyWorkStarting…",
+}
+`;
+
+exports[`BootPage > draws the en brand before any plugin state arrives 2`] = `"FunnyWorkCould not start FunnyWorkConnection unavailable"`;
+
+exports[`BootPage > draws the zh-CN brand before any plugin state arrives 1`] = `
+{
+  "logo": {
+    "alt": "",
+    "height": 64,
+    "width": 64,
+  },
+  "text": "FunnyWork正在启动……",
+}
+`;
+
+exports[`BootPage > draws the zh-CN brand before any plugin state arrives 2`] = `"FunnyWork无法启动 FunnyWorkConnection unavailable"`;

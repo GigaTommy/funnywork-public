@@ -1,0 +1,11 @@
+{
+  "tenant": "funnyworker",
+  "signingKey": "BASE64_ED25519_PKCS8_PRIVATE_KEY",
+  "signingPublicKey": "BASE64_ED25519_RAW_PUBLIC_KEY",
+  "endpoint": "https://api.deepseek.com/v1",
+  "model": "deepseek-flash",
+  "apiKey": "YOUR_DEEPSEEK_KEY",
+  "thinking": "disabled",
+  "maxTokens": 65536,
+  "version": 1
+}

@@ -1,0 +1,19 @@
+# Bilingual-pair consistency record for 2026-10-30-linux-desktop-chrome.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write .agents/notes/implemented/architecture/2026-10-30-linux-desktop-chrome.md
+/agent-note-linux-shares-the-mac-desktop-command-model:
+  en: 7a8859b5e45793f7
+  zh: 64ae9e45cfcbc031
+/agent-note-linux-shares-the-mac-desktop-command-model/problem:
+  en: 39f6d15a7ebe86ad
+  zh: 75f183ffc935293b
+/agent-note-linux-shares-the-mac-desktop-command-model/decision:
+  en: 6732566a84a17ec4
+  zh: 2a83967572749c1c
+/agent-note-linux-shares-the-mac-desktop-command-model/alternatives-considered:
+  en: 07cffcaf9e1e1b94
+  zh: b5abdf6b07e6dbdb
+/agent-note-linux-shares-the-mac-desktop-command-model/consequences:
+  en: b3f6064eea7c6922
+  zh: d52de2074946d128

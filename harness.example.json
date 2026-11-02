@@ -1,0 +1,9 @@
+{
+  "acknowledge_trusted_profile": false,
+  "dsh_bin": "/absolute/path/to/dsh",
+  "profile": "sdk",
+  "patches": ["/absolute/path/to/company-reviewed.patch.yml"],
+  "provider": "company-deepseek",
+  "model": "customer-confirmed-model-id",
+  "base_url": "http://customer-inference-endpoint"
+}

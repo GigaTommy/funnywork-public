@@ -1,0 +1,84 @@
+[
+  [
+    "会议纪要",
+    "Meeting notes",
+    "从会议记录到明确待办",
+    "From meeting records to clear actions",
+    "整理产品例会记录，提炼决定、负责人和截止日期。",
+    "Turn a product meeting record into decisions, owners, and deadlines.",
+    [
+      "上线范围｜先开放企业内测",
+      "产品负责人｜整理试点反馈",
+      "研发负责人｜周五前确认排期"
+    ],
+    [
+      "Release scope | Start with an enterprise pilot",
+      "Product owner | Consolidate pilot feedback",
+      "Engineering lead | Confirm schedule by Friday"
+    ],
+    "会议结束，工作继续推进。",
+    "Keep work moving after the meeting."
+  ],
+  [
+    "工作总结",
+    "Work summaries",
+    "把一周工作，整理成一份汇报",
+    "Turn a week of work into a clear report",
+    "汇总项目记录、任务清单与阶段成果，整理进展、问题与下周计划。",
+    "Combine project records, task lists, and outputs into progress, open issues, and next steps.",
+    [
+      "本周完成｜需求梳理、方案初稿",
+      "推进事项｜客户反馈整理中",
+      "下周重点｜完善方案、启动试点"
+    ],
+    [
+      "Completed | Requirements and proposal draft",
+      "In progress | Customer feedback review",
+      "Next week | Refine the proposal and start the pilot"
+    ],
+    "少花时间整理，多留时间推进。",
+    "Spend less time compiling and more time progressing."
+  ],
+  [
+    "PPT 制作",
+    "Presentation creation",
+    "把资料与思路，变成汇报演示",
+    "Turn materials and ideas into a presentation",
+    "从项目材料提炼汇报结构，形成演示文稿，继续修改内容与表达。",
+    "Build a presentation from project materials, then refine the content and message.",
+    [
+      "01 项目目标与业务背景",
+      "02 方案比较与关键进展",
+      "03 下一阶段计划与行动"
+    ],
+    [
+      "01 Goals and business context",
+      "02 Options and key progress",
+      "03 Next steps and actions"
+    ],
+    "从空白页面，走到清晰表达。",
+    "From a blank page to a clear story."
+  ],
+  [
+    "Excel 加工",
+    "Spreadsheet processing",
+    "把分散表格，整理成可用结果",
+    "Turn scattered spreadsheets into useful results",
+    "合并多份表格，统一字段，检查重复项，汇总部门与项目数据。",
+    "Combine spreadsheets, standardize columns, check duplicates, and summarize team and project data.",
+    [
+      "部门        项目数        已完成",
+      "产品             12              9",
+      "研发             18             14",
+      "运营              8              6"
+    ],
+    [
+      "Team          Projects       Completed",
+      "Product             12                9",
+      "Engineering     18              14",
+      "Operations         8                6"
+    ],
+    "减少重复加工，更快看清数据。",
+    "Less repetitive processing. A clearer view of the data."
+  ]
+]

@@ -1,0 +1,934 @@
+"HI，你好" = "HI, there";
+"操作结果待确认" = "Result not confirmed";
+"你" = "You";
+"停止" = "Stop";
+"加载更多" = "Load more";
+"在线" = "Online";
+"密码" = "Password";
+"已排队" = "Queued";
+"确认清除" = "Clear operation";
+"开始吧" = "Let's begin";
+"排队发送" = "Send to queue";
+"操作已过期" = "Operation expired";
+"无法安全保存登录，请重试。" = "Could not securely save your sign-in. Try again.";
+"显示密码" = "Show password";
+"还没有消息" = "No messages yet";
+"最近操作" = "Recent operations";
+"暂时无法完成，请重试。" = "Something went wrong. Try again.";
+"服务地址" = "Server address";
+"未命名对话" = "Untitled conversation";
+"桌面" = "Desktop";
+"操作被拒绝" = "Operation declined";
+"操作已接受" = "Operation accepted";
+"已接收" = "Received";
+"状态已更新，请刷新后重试。" = "Things have changed. Refresh and try again.";
+"暂不可用" = "Unavailable";
+"活动记录" = "Activity record";
+"登录" = "Sign in";
+"登录已过期，请重新登录。" = "Your session has expired. Sign in again.";
+"离线" = "Offline";
+"结果待确认" = "Result not confirmed";
+"说点什么…" = "Write a message…";
+"请求失败，请稍后重试。" = "Request failed. Please try again later.";
+"请检查服务地址，使用 https:// 开头的地址。" = "Check the server address. It must start with https://.";
+"账号" = "Account";
+"退出登录" = "Sign out";
+"退出登录？" = "Sign out?";
+"重试" = "Retry";
+"隐藏密码" = "Hide password";
+"内容过长，请缩短后重试。" = "The content is too long. Shorten it and try again.";
+"加载更早记录" = "Load earlier records";
+"发送" = "Send";
+"发送方式" = "Send options";
+"已提交" = "Submitted";
+"拒绝" = "Deny";
+"提交回答" = "Submit answer";
+"操作详情" = "Operation details";
+"保存失败，内容尚未发送。请重试。" = "Could not save. Nothing was sent. Try again.";
+"无法读取草稿，请重新打开对话。" = "Could not read the draft. Reopen the conversation.";
+"有新消息" = "New messages";
+"本次允许" = "Allow once";
+"核对并清除" = "Review and clear";
+"确认中" = "Checking";
+"清除待确认操作？" = "Clear the unconfirmed operation?";
+"立即补充" = "Steer now";
+"补充回答" = "Additional answer";
+"请先查看执行结果。" = "Check the result before trying again.";
+"请重新登录。" = "Please sign in again.";
+"清除不会撤回已发送的操作，请先确认执行结果。" = "Clearing does not cancel a sent operation. Check the result first.";
+"部分本地内容未能清理，请重新登录后重试退出。" = "Some local data could not be removed. Sign in and try signing out again.";
+"需要你的回答" = "Answer needed";
+"需要你的批准" = "Approval needed";
+"连接中" = "Connecting";
+"上次同步" = "Last synced";
+"没有执行此操作的权限，请联系管理员。" = "You do not have permission for this operation. Contact your administrator.";
+"恢复这条草稿" = "Restore this draft";
+"消息" = "Message";
+"还没有对话" = "No conversations yet";
+"没有找到对话" = "No conversations found";
+"换个关键词试试" = "Try another search";
+"清除筛选" = "Clear filters";
+"全部设备" = "All devices";
+"筛选设备" = "Filter devices";
+"搜索对话" = "Search conversations";
+"完成" = "Done";
+"登录失败，请检查账号和密码。" = "Could not sign in. Check your account and password.";
+
+"代码" = "Code";
+
+"复制" = "Copy";
+
+"已复制" = "Copied";
+
+"分享" = "Share";
+
+
+"未连接" = "Not connected";
+
+"已保存的记录" = "Saved messages";
+
+"已保存的对话" = "Saved chats";
+
+"连接已断开，请检查网络后重试。" = "Connection lost. Check your network and try again.";
+
+"等待超时，请重试。" = "The request timed out. Try again.";
+
+"无法连接，请检查服务地址后重试。" = "Cannot connect. Check the server address and try again.";
+
+"无法建立安全连接，请联系管理员。" = "Cannot establish a secure connection. Contact your administrator.";
+
+"暂时无法连接，请稍后重试。" = "Cannot connect right now. Try again later.";
+
+"未命名文件" = "Untitled file";
+
+"文件较大，请在桌面打开。" = "This file is large. Open it on your desktop.";
+
+"文件校验失败，请重新下载。" = "File verification failed. Download it again.";
+
+"已保存的文件列表" = "Saved file list";
+
+"还没有文件" = "No files yet";
+
+"已下载" = "Downloaded";
+
+"同步中" = "Syncing";
+
+"请在桌面打开" = "Open on desktop";
+
+"取消" = "Cancel";
+
+"文件" = "Files";
+
+"无法读取创建记录，请重新打开。" = "Cannot read the creation record. Open this screen again.";
+
+"创建结果待确认" = "Checking creation";
+
+"核对结果" = "Check result";
+
+"设备" = "Device";
+
+"选择设备" = "Choose a device";
+
+"工作区" = "Workspace";
+
+"选择工作区" = "Choose a workspace";
+
+"请打开桌面客户端后重试。" = "Open the desktop app and try again.";
+
+"没有可用工作区，请在桌面检查工作区与客户端版本。" = "No workspaces available. Check your workspaces and app version on desktop.";
+
+"新建" = "Create";
+
+"新对话" = "New chat";
+
+"清除创建记录？" = "Clear creation record?";
+
+"清除不会删除已创建的对话，请先核对对话列表。" = "Clearing this record does not delete a created chat. Check your chat list first.";
+
+"正在创建，请稍候。" = "Creating your chat…";
+
+"未能创建，请检查所选工作区。" = "Could not create the chat. Check the selected workspace.";
+
+"请求已过期，请重新选择。" = "This request expired. Choose again.";
+
+"请先核对结果，避免重复创建。" = "Check the result before creating another chat.";
+
+"选择文本" = "Select text";
+
+"全部复制" = "Copy all";
+
+"收起键盘" = "Dismiss keyboard";
+
+"选择对话" = "Choose a conversation";
+
+"今天" = "Today";
+
+"昨天" = "Yesterday";
+
+"过去 7 天" = "Previous 7 days";
+
+"过去 30 天" = "Previous 30 days";
+
+"更早" = "Earlier";
+
+"外观" = "Appearance";
+
+"跟随系统" = "System";
+
+"浅色" = "Light";
+
+"深色" = "Dark";
+
+"版本" = "Version";
+
+"设置" = "Settings";
+
+"朗读" = "Read aloud";
+
+"正在朗读" = "Reading aloud";
+
+"朗读已暂停" = "Reading paused";
+
+"暂停朗读" = "Pause reading";
+
+"继续朗读" = "Resume reading";
+
+"停止朗读" = "Stop reading";
+
+"暂时无法朗读，请重试。" = "Unable to read aloud. Please try again.";
+
+"搜索消息" = "Search messages";
+
+"正在搜索…" = "Searching…";
+
+"更多结果" = "More results";
+
+"没有找到消息" = "No messages found";
+
+"搜索未完成，请重试。" = "Search is incomplete. Please try again.";
+
+"语音输入" = "Voice input";
+
+"识别文字" = "Transcript";
+
+"开始录音" = "Start recording";
+
+"重新录音" = "Record again";
+
+"结束录音" = "Finish recording";
+
+"使用文字" = "Use text";
+
+"识别未完成，请检查文字后继续。" = "Transcription is incomplete. Review the text to continue.";
+
+"请在系统设置中允许语音识别。" = "Allow speech recognition in Settings.";
+
+"请在系统设置中允许麦克风访问。" = "Allow microphone access in Settings.";
+
+"语音识别暂不可用，请稍后重试。" = "Speech recognition is unavailable. Try again later.";
+
+"未找到可用的麦克风。" = "No microphone is available.";
+
+"置顶" = "Pin";
+
+"取消置顶" = "Unpin";
+
+"已置顶" = "Pinned";
+
+"回到最新" = "Jump to latest";
+
+"新增" = "Added";
+
+"删除" = "Removed";
+
+"附件合计不能超过 32 MB。" = "Attachments must total 32 MB or less.";
+
+"请选择不超过 32 MB 的文件。" = "Choose a file of 32 MB or less.";
+
+"每条消息最多添加 4 个附件。" = "Add up to 4 attachments per message.";
+
+"附件草稿空间已满，请移除部分附件。" = "Attachment storage is full. Remove some draft attachments.";
+
+"添加文件" = "Add files";
+
+"对话文件" = "Conversation files";
+
+"请更新桌面客户端后再添加附件。" = "Update the desktop app to add attachments.";
+
+"已就绪" = "Ready";
+
+"待上传" = "Pending upload";
+
+"移除附件" = "Remove attachment";
+
+"上传进度" = "Upload progress";
+
+"暂停上传" = "Pause upload";
+
+"继续上传" = "Resume upload";
+
+"照片" = "Photos";
+
+"无法读取这张照片，请重新选择。" = "Unable to read this photo. Please select it again.";
+
+"正在读取…" = "Reading…";
+
+"文件尚未同步，请稍后重试。" = "This file hasn’t synced yet. Please try again later.";
+
+"正在处理…" = "Working…";
+
+"下载文件" = "Downloaded files";
+
+"清除下载文件" = "Clear downloads";
+
+"存储空间" = "Storage";
+
+"清理后可重新下载，草稿和消息会保留。" = "You can download these files again. Drafts and messages will be kept.";
+
+"清除下载文件？" = "Clear downloaded files?";
+
+"清除" = "Clear";
+
+"已完成" = "Completed";
+"未完成" = "Incomplete";
+
+"重命名" = "Rename";
+
+"对话名称" = "Conversation name";
+
+"保存" = "Save";
+
+"已归档" = "Archived";
+
+"没有已归档的对话" = "No archived chats";
+
+"返回对话" = "Back to chats";
+
+"对话选项" = "Chat options";
+
+"取消归档" = "Unarchive";
+
+"归档" = "Archive";
+
+"拍照" = "Take photo";
+
+"相机" = "Camera";
+
+"这台设备无法使用相机。" = "The camera is unavailable on this device.";
+
+"请在设置中允许访问相机。" = "Allow camera access in Settings.";
+
+"打开设置" = "Open Settings";
+
+"工具调用" = "Tool call";
+
+"工具返回" = "Tool result";
+
+"工具执行失败" = "Tool failed";
+
+"开始处理" = "Started";
+
+"本轮已完成" = "Turn completed";
+
+"本轮已停止" = "Turn stopped";
+
+"本轮已中断" = "Turn interrupted";
+
+"本轮受阻" = "Turn blocked";
+
+"本轮执行失败" = "Turn failed";
+
+"已达到输出上限" = "Output limit reached";
+
+"上下文更新" = "Context updated";
+
+"预览" = "Preview";
+
+"无法预览，请重新添加附件。" = "Unable to preview. Remove the attachment and add it again.";
+
+"正在回复…" = "Replying…";
+
+"完整内容将在回复结束后显示。" = "The full reply will appear when it is ready.";
+
+"回复已中断" = "Reply interrupted";
+
+"设备已离线，请选择其他设备或稍后重试。" = "This device is offline. Choose another device or try again later.";
+
+"搜索内容最多 160 个字符。" = "Use up to 160 characters to search.";
+
+"搜索已归档消息" = "Search archived messages";
+
+"未能加载消息" = "Couldn’t load message";
+
+"打开对话" = "Open conversation";
+
+"继续搜索" = "Continue searching";
+
+"查看上下文" = "View context";
+
+"加载中间记录" = "Load messages in between";
+
+"搜索结果" = "Search result";
+
+"正在定位…" = "Finding message…";
+
+"未能定位消息，请重试。" = "Couldn’t find the message. Try again.";
+
+"最近连接" = "Last connected";
+
+"还没有设备" = "No devices yet";
+
+"已撤销授权" = "Access revoked";
+
+"在电脑上登录同一账号，并开启同步。" = "Sign in with the same account on your computer and turn on sync.";
+
+
+"需要批准" = "Approval needed";
+
+
+
+"继续加载" = "Load more";
+
+"有更新" = "New activity";
+
+"提醒" = "Notifications";
+
+"需要回答" = "Answer needed";
+
+"任务结束" = "Task ended";
+
+"提醒不会显示对话内容。" = "Notifications do not show conversation content.";
+
+"正在更新…" = "Updating…";
+
+"系统通知已关闭" = "System notifications are off";
+
+"打开系统设置" = "Open system settings";
+
+"状态" = "Status";
+
+"已开启" = "On";
+
+"等待连接" = "Waiting for connection";
+
+"未开启" = "Off";
+
+"无法安全保存提醒设置，请重试。" = "Could not securely save notification settings. Try again.";
+
+"无法开启提醒，请重试。" = "Could not enable notifications. Try again.";
+
+"提醒暂不可用，请稍后重试。" = "Notifications are unavailable. Try again later.";
+
+"进行中" = "In progress";
+
+"附件" = "Attachment";
+
+"已停用" = "Disabled";
+
+"恢复设备" = "Restore device";
+
+"停用设备" = "Disable device";
+
+"恢复设备？" = "Restore device?";
+
+"停用设备？" = "Disable device?";
+
+"恢复" = "Restore";
+
+"停用" = "Disable";
+
+"恢复后，请在电脑上重新连接。" = "Reconnect on your computer after restoring.";
+
+"停用后将暂停同步和远程操作。" = "Disabling pauses sync and remote actions.";
+
+"暂时无法确认结果，请刷新设备状态。" = "The result could not be confirmed. Refresh device status.";
+
+"全屏查看" = "View full screen";
+
+"自动换行" = "Wrap lines";
+
+"公式" = "Formula";
+
+"服务地址不一致，请在桌面登录当前服务后重试。" = "The server does not match. Sign in to this server on your desktop and try again.";
+
+"这不是有效的连接码，请重新扫描。" = "This connection code is invalid. Scan again.";
+
+"连接码已过期，请在桌面刷新后重新扫描。" = "This code has expired. Refresh it on your desktop and scan again.";
+
+"无法使用此连接码，请确认两端登录同一账号，并重新扫描。" = "This code is unavailable. Sign in to the same account on both devices and scan again.";
+
+"连接码已失效或设备离线，请在桌面刷新后重新扫描。" = "This code is no longer valid or the device is offline. Refresh it on your desktop and scan again.";
+
+"确认连接这台设备？" = "Connect to this device?";
+
+"连接" = "Connect";
+
+"重新扫描" = "Scan again";
+
+"扫描桌面上的二维码" = "Scan the desktop QR code";
+
+"在桌面菜单中选择“连接手机”。" = "Choose “Connect phone” in the desktop menu.";
+
+"扫描二维码" = "Scan QR code";
+
+"连接设备" = "Connect device";
+
+"无法打开相机，请稍后重试。" = "Unable to open the camera. Try again later.";
+
+"请允许相机访问，以扫描二维码。" = "Allow camera access to scan QR codes.";
+
+"图片" = "Images";
+
+"正在加载图片" = "Loading image";
+
+"上一张" = "Previous image";
+
+"下一张" = "Next image";
+
+"放大" = "Zoom in";
+
+"适合屏幕" = "Fit to screen";
+
+"打开文件" = "Open file";
+
+"无法显示这张图片，可以尝试打开文件。" = "Unable to display this image. Try opening the file.";
+
+"保存图片" = "Save image";
+"正在保存图片" = "Saving image";
+"已保存" = "Saved";
+"无法保存图片" = "Unable to save image";
+"请在设置中允许添加照片。" = "Allow adding photos in Settings.";
+"无法保存图片，请重试。" = "Unable to save this image. Please try again.";
+
+"编辑消息" = "Edit message";
+"展开输入" = "Expand input";
+
+"从这里继续" = "Continue from here";
+"暂时无法创建分支，请刷新后重试。" = "Unable to create a branch. Refresh and try again.";
+"查看分支结果" = "View branch result";
+
+"创建对话" = "Create conversation";
+"正在创建对话…" = "Creating conversation…";
+"刷新" = "Refresh";
+
+"未创建对话" = "Conversation was not created";
+"复制图片" = "Copy image";
+"无法复制图片" = "Unable to copy image";
+"无法复制图片，请重试。" = "Unable to copy this image. Please try again.";
+"展开" = "Show more";
+"收起" = "Show less";
+"已展开" = "Expanded";
+"已收起" = "Collapsed";
+
+"输入账号" = "Enter your account";
+
+"输入密码" = "Enter your password";
+
+
+"正在加载…" = "Loading…";
+
+"事项已更新" = "Items updated";
+
+"打开菜单" = "Open menu";
+"收起菜单" = "Close menu";
+"今天想做点什么？" = "What would you like to do today?";
+
+"正在等待模型容量…" = "Waiting for model capacity…";
+"等待模型容量" = "Waiting for model capacity";
+
+"模型" = "Model";
+"Agent 预设" = "Agent preset";
+"跟随桌面默认" = "Use desktop default";
+"所选模型或预设已不可用，请重新选择。" = "The selected model or preset is no longer available. Choose again.";
+
+"用量：%lld tokens" = "Usage: %lld tokens";
+
+"今天想聊点什么？" = "What would you like to chat about?";
+"解释一个概念" = "Explain a concept";
+"帮我润色文字" = "Polish some writing";
+"一起想个点子" = "Brainstorm an idea";
+"帮我解释一个概念：" = "Help me understand this concept:";
+"帮我润色下面这段文字：" = "Help me polish this text:";
+"一起想想这个问题：" = "Let's think about this question:";
+"电脑任务" = "Computer tasks";
+"返回聊天" = "Back to chat";
+"聊天记录" = "Chat history";
+"正在发送…" = "Sending…";
+"正在停止…" = "Stopping…";
+"正在保存回复…" = "Saving the reply…";
+"暂无可用聊天模型，请联系管理员配置。" = "No chat models are available. Contact your administrator.";
+"发送结果尚未确认，请重试发送。" = "Sending is not confirmed. Retry sending.";
+"暂时无法获得回复，请核对结果后重试。" = "The reply is unavailable. Check the result before retrying.";
+"连接已中断，正在核对回复结果。" = "The connection was interrupted. Checking the reply.";
+"回复结果尚未确认，请稍后核对或联系管理员。" = "The reply is not confirmed. Check again later or contact your administrator.";
+"这次回复未完成，内容已保留。" = "This reply did not finish. Your text has been kept.";
+"无法保存聊天记录，请减少草稿后重试。" = "Unable to save chat history. Reduce saved drafts and retry.";
+
+"暂时无法开始聊天，请稍后再试。" = "Chat is unavailable right now. Please try again later.";
+"暂时没有可用模型。" = "No models are available right now.";
+
+"累计用量：%@ tokens" = "Total usage: %@ tokens";
+"用量待更新" = "Usage pending";
+"部分用量尚未确认" = "Some usage is unconfirmed";
+"输入 %@ · 输出 %@ tokens" = "Input %@ · Output %@ tokens";
+"其中缓存命中：%@ tokens" = "Cached input: %@ tokens";
+"用量暂不可用" = "Usage unavailable";
+
+"下一轮模型" = "Model for next message";
+"选择模型" = "Choose model";
+"会话用量" = "Conversation usage";
+"本轮用量" = "Reply usage";
+"已知调用缓存命中 %@" = "Known-call cache hit %@";
+"缓存命中 %@" = "Cache hit %@";
+"缓存命中率：—" = "Cache hit: —";
+"缓存数据未提供" = "Cache data unavailable";
+"实际使用模型" = "Model used";
+"Token 明细" = "Token details";
+"总用量" = "Total usage";
+"待更新" = "Pending";
+"输入总量（含缓存）" = "Total input (including cache)";
+"输出" = "Output";
+"缓存读取" = "Cache read";
+"缓存写入" = "Cache write";
+"未命中输入" = "Uncached input";
+"已知调用缓存命中率" = "Known-call cache hit rate";
+"缓存命中率" = "Cache hit rate";
+"数据状态" = "Data status";
+"未提供" = "Unavailable";
+"缓存指标仅统计已提供缓存数据的调用。" = "Cache metrics cover only calls with reported cache data.";
+"缓存已包含在输入中，不重复计入总用量。" = "Cached tokens are included in input and counted once in the total.";
+
+"本轮用量：%@ tokens" = "Reply usage: %@ tokens";
+
+"缓存数据覆盖：%lld/%lld 次已确认调用" = "Cache coverage: %lld/%lld confirmed calls";
+
+"平均输出 %@ tok/s" = "Average output %@ tok/s";
+"耗时与速度" = "Timing and speed";
+"排队耗时" = "Queue time";
+"获准后提交耗时" = "Dispatch delay";
+"模型请求耗时" = "Model request time";
+"调用总耗时" = "Total call time";
+"工具耗时" = "Tool time";
+"平均首个输出延迟" = "Average first output latency";
+"平均输出速度" = "Average output speed";
+"性能数据暂不可用" = "Performance data unavailable";
+"部分调用性能数据尚未确认" = "Some call timing is unconfirmed";
+"性能数据来自电脑 Harness 的完整会话统计。" = "Performance comes from the desktop Harness whole-session statistics.";
+"性能数据为服务端观测值；首个输出包含推理内容，不等同于 GPU 纯解码速度。" = "Performance is observed at the gateway. First output includes reasoning and is not GPU-only decode speed.";
+
+"首个输出样本数" = "First output samples";
+"输出速度样本数" = "Output speed samples";
+"部分调用暂无性能数据" = "Some calls have no performance data yet";
+"延迟与速度仅统计有效样本；速度按生成时间加权。" = "Latency and speed use valid samples only. Speed is weighted by generation time.";
+
+"连接状态" = "Connection status";
+"暂时未连接" = "Temporarily disconnected";
+
+"模型额度" = "Model allowance";
+"可用余额" = "Available balance";
+"已预留" = "Reserved";
+"今日可用" = "Available today";
+"有效期" = "Expires";
+"额度未开通、已停用或过期，请联系管理员。" = "Allowance is inactive or expired. Contact your administrator.";
+"额度已用完，请联系管理员充值。" = "Allowance exhausted. Contact your administrator for a top-up.";
+"本次已领取" = "Credit received";
+"领取额度" = "Claim credit";
+"正在读取额度…" = "Loading allowance…";
+"刷新额度" = "Refresh allowance";
+"额度由管理员充值。推理会先预留费用，完成后结算。" = "Your administrator adds credit. Calls reserve costs before settling.";
+"可用额度不足，请查看余额或联系管理员充值。" = "Insufficient allowance. Check your balance or contact your administrator for a top-up.";
+"尚未开通模型额度，请领取额度或联系管理员。" = "No model allowance. Claim credit or contact your administrator.";
+"模型额度已停用或过期，请联系管理员。" = "Model allowance is inactive or expired. Contact your administrator.";
+"模型服务暂时不可用，请联系管理员。" = "Model service is unavailable. Contact your administrator.";
+"单次输出超过账号限额，请刷新模型后重试。" = "Output exceeds your account limit. Refresh models and try again.";
+
+"任务详情" = "Task details";
+
+"需要处理" = "Needs attention";
+
+"远程" = "Remote";
+
+"检查中" = "Checking";
+
+"状态未知" = "Unknown";
+
+"聊天" = "Chat";
+
+"有一段聊天正在运行 · 查看" = "A chat is running · View";
+
+"管理工作区" = "Manage workspaces";
+"添加" = "Add";
+"移除" = "Remove";
+"内容" = "Contents";
+"Git" = "Git";
+"检查操作结果" = "Check operation result";
+"已在电脑确认结果" = "Verified on computer";
+"已核对电脑结果？" = "Have you checked the computer?";
+"已核对" = "Verified";
+"解除等待后可以进行新的操作，不会重新执行此前的命令。" = "You can start a new operation after clearing this wait. The previous command will not run again.";
+"输入电脑上已有文件夹的完整路径。" = "Enter the full path of an existing folder on the computer.";
+"确认移除？" = "Confirm removal?";
+"移除工作区登记，文件和聊天仍保留。" = "Remove the workspace registration. Files and chats are kept.";
+"移除工作树；存在未提交文件时电脑会拒绝操作。" = "Remove the worktree. The computer will reject removal if it contains uncommitted files.";
+"添加工作区" = "Add workspace";
+"工作区名称" = "Workspace name";
+"文件名" = "File name";
+"文件夹名称" = "Folder name";
+"新工作树分支" = "New worktree branch";
+"新分支名称" = "New branch name";
+"上一级" = "Parent folder";
+"新文件" = "New file";
+"新文件夹" = "New folder";
+"未选择分支" = "No branch selected";
+"新分支" = "New branch";
+"新工作树" = "New worktree";
+"移除工作树" = "Remove worktree";
+"放弃未保存的修改？" = "Discard unsaved changes?";
+"放弃" = "Discard";
+"电脑未完成操作，请刷新后检查。" = "The computer did not complete the operation. Refresh and check.";
+"结果尚未确认，请在电脑检查后再操作。" = "The result is unconfirmed. Check the computer before continuing.";
+"未确认命令是否送达，请检查电脑。" = "Command delivery is unconfirmed. Check the computer.";
+"操作仍在等待，可以检查结果。" = "The operation is still pending. You can check its result.";
+"电脑已离线，请连接后重试。" = "The computer is offline or unavailable. Reconnect and retry.";
+"文件超过编辑大小限制。" = "The file exceeds the editor size limit.";
+"文件已被修改，请重新打开后保存。" = "The file has changed. Reopen it before saving.";
+"此路径不允许访问，请选择工作区内的文件。" = "This path is unavailable. Choose a file inside the workspace.";
+"此文件不支持文本编辑。" = "This file cannot be edited as text.";
+"电脑未完成操作，请检查路径、Git 状态及是否有未提交文件。" = "The operation failed. Check the path, Git status and uncommitted files.";
+"编辑排队消息" = "Edit queued message";
+
+"删除分支？" = "Delete branch?";
+"删除分支" = "Delete branch";
+"仅删除已合并的本地分支，不强制删除。" = "Only merged local branches can be deleted. Force deletion is disabled.";
+"从此分支创建工作树" = "Create worktree from branch";
+
+"查看运行中的聊天" = "View running chats";
+
+"更换头像" = "Change picture";
+"正在保存…" = "Saving…";
+"头像未保存，请选择图片后重试。" = "Picture was not saved. Choose an image and try again.";
+
+"保留当前草稿？" = "Keep your draft?";
+"追加到草稿" = "Append to draft";
+"替换草稿" = "Replace draft";
+"发送后保留键盘" = "Keep keyboard open after sending";
+"使用偏好" = "Preferences";
+"当前对话" = "Current chat";
+"这条草稿会保留，回复结束后可发送。" = "Your draft is saved. Send it after this reply finishes.";
+"聊天服务暂时未连接" = "Chat service is temporarily disconnected";
+"更多" = "More";
+"排队" = "Queue";
+"排队消息会在这轮结束后发送。" = "Queued messages are sent after this turn finishes.";
+"立即补充会指导正在进行的工作。" = "Steer guides the work already in progress.";
+
+"正在核对连接" = "Checking connection";
+"连接尚未确认" = "Connection not confirmed";
+"此电脑离线" = "This computer is offline";
+"可查看已同步记录，电脑上线后可继续操作。" = "You can read synced history. Continue when this computer is online.";
+"使用帮助" = "Help";
+"帮助与关于" = "Help and about";
+"聊天不需要电脑在线。回复期间可以写草稿，回复结束后再发送。" = "Chat works without a connected computer. Write a draft while a reply runs and send it when the reply finishes.";
+"远程任务在所选电脑上运行。电脑离线时，可查看已经同步的记录。" = "Remote tasks run on the selected computer. Synced history is available while the computer is offline.";
+"操作结果未确认时，先核对原操作的结果，避免重复提交。" = "If an action is unconfirmed, check its result before submitting again.";
+"退出会清理这个账号的本地草稿和缓存。已开始的任务不会因此停止。" = "Signing out clears local drafts and cached files for this account. Tasks that have started are not stopped.";
+
+"请更新服务端后使用历史管理。" = "Update the server to use history management.";
+"搜索内容过长，请缩短后重试。" = "Search text is too long. Shorten it and try again.";
+"未能修改聊天，请刷新后重试。" = "Could not update the chat. Refresh and try again.";
+"搜索聊天" = "Search chats";
+"只搜索最近已加载的聊天标题。" = "Search covers only the titles of recently loaded chats.";
+"历史操作结果待确认" = "History change needs confirmation";
+"恢复对话" = "Restore chat";
+"加载更多聊天" = "Load more chats";
+"对话已归档，恢复后可继续发送。" = "This chat is archived. Restore it to send another message.";
+"重新核对" = "Check again";
+
+"名称过长，请缩短后重试。" = "The name is too long. Shorten it and try again.";
+
+"搜索已归档对话" = "Search archived chats";
+
+"任务" = "Task";
+"执行位置" = "Run on";
+"想让电脑做什么？" = "What should your computer do?";
+"创建后会带入草稿，确认后发送。" = "Your task will open as a draft after creation. Review it before sending.";
+"更多选项" = "More options";
+"创建并继续" = "Create and continue";
+"撤回到草稿" = "Withdraw to draft";
+"正在核对撤回结果" = "Checking withdrawal";
+"电脑确认撤回后，内容会追加到草稿。核对完成前请勿重新发送这条内容。" = "The text will be added to your draft once your computer confirms removal. Wait for confirmation before sending it again.";
+"未能撤回，内容可能已开始处理。请刷新队列。" = "Could not withdraw. Processing may have started. Refresh the queue.";
+"审阅结果" = "Review result";
+"这里展示已同步回复中的变更片段，电脑上的文件可能已有后续修改。" = "These changes come from synced replies. Files on your computer may have changed since.";
+"变更" = "Changes";
+"变更片段" = "Change excerpt";
+"审阅意见" = "Review feedback";
+"写下需要调整的地方…" = "What needs to change?";
+"加入草稿" = "Add to draft";
+"意见会追加到现有草稿，确认后发送。" = "Feedback will be added to your existing draft. Review it before sending.";
+"点选一行，将文件与行号加入审阅意见。" = "Tap a line to add its file and line number to your feedback.";
+"新行" = "New line";
+"旧行" = "Old line";
+"请根据以下审阅意见继续修改：" = "Please continue with this review feedback:";
+"对应已同步消息" = "Synced message references";
+
+"内容过长，请缩短后继续。" = "Your task is too long. Shorten it to continue.";
+
+"保留副本并结束核对" = "Keep a copy and stop checking";
+"保留副本并结束核对？" = "Keep a copy and stop checking?";
+"这不会撤回已发送的操作。内容可能仍在队列中或已开始处理，请核对电脑后再发送草稿。" = "This does not cancel the submitted action. The task may still be queued or processing. Check your computer before sending the draft.";
+
+"先写下审阅意见。" = "Write your review feedback first.";
+"这轮记录暂不可用，审阅意见仍已保留。" = "This result is unavailable. Your review feedback is still saved.";
+"正在提交，请稍候。" = "Submitting. Please wait.";
+"正在核对撤回，草稿已保留。" = "Checking withdrawal. Your draft is saved.";
+"请先核对上一条操作。" = "Check the previous action first.";
+"正在核对连接，草稿已保留。" = "Checking the connection. Your draft is saved.";
+"此电脑离线，草稿已保留。" = "This computer is offline. Your draft is saved.";
+"连接尚未确认，请重试。" = "Connection is unconfirmed. Try again.";
+"请先完成附件上传。" = "Finish uploading attachments first.";
+"修改已生效" = "Changes applied";
+"修改未生效，编辑副本已保留" = "Changes were not applied. Your edited copy is saved.";
+"修改已提交，等待电脑确认" = "Changes submitted. Waiting for your computer.";
+"未提交的队列编辑" = "Unsubmitted queue edit";
+"修改结果待确认" = "Checking edit result";
+"未提交审阅意见" = "Unsubmitted review feedback";
+"继续审阅" = "Continue review";
+"将保留的意见加入草稿" = "Add saved feedback to draft";
+"队列编辑副本" = "Queue edit copies";
+"审阅本轮" = "Review this turn";
+"这条内容已不在队列中，编辑副本仍已保留。" = "This item is no longer queued. Your edited copy is saved.";
+"提交修改" = "Submit changes";
+"无法保存任务草稿，请重新打开。" = "Cannot save your task draft. Reopen this screen.";
+"正在核对执行位置。" = "Checking the task location.";
+"执行位置尚未确认，请重试。" = "Task location is unconfirmed. Try again.";
+"请选择设备。" = "Choose a device.";
+"请选择工作区。" = "Choose a workspace.";
+"所选设备暂不可用，请重新选择。" = "The selected device is unavailable. Choose again.";
+"所选工作区暂不可用，请重新选择。" = "The selected workspace is unavailable. Choose again.";
+"所选设备暂不可用" = "Selected device unavailable";
+"所选工作区暂不可用" = "Selected workspace unavailable";
+"所选模型暂不可用" = "Selected model unavailable";
+"所选预设暂不可用" = "Selected preset unavailable";
+
+"正在刷新队列状态，草稿已保留。" = "Refreshing queue state. Your draft is saved.";
+"请刷新队列状态后继续。" = "Refresh the queue state to continue.";
+
+"你的消息" = "Your message";
+"标题" = "Title";
+"返回搜索" = "Back to search";
+"搜索命中" = "Search match";
+"这条消息暂不可用" = "This message is unavailable";
+"可连续点选其他行，并在这里补充意见。" = "Select more lines and add feedback here.";
+"查看意见" = "View feedback";
+
+"无法打开对话，请重试。" = "Cannot open this chat. Try again.";
+
+"待加入的补充意见" = "Pending additional feedback";
+"添加意见" = "Add feedback";
+
+"回复摘录" = "Reply excerpt";
+
+"完整回复" = "Full replies";
+
+"本次执行位置" = "Run location";
+
+"已同步回复" = "Synced replies";
+
+"上一个文件" = "Previous file";
+
+"下一个文件" = "Next file";
+
+"本轮没有已同步回复" = "No synced replies in this turn";
+
+"展开编辑" = "Expand editor";
+
+"编辑任务" = "Edit task";
+
+"编辑审阅意见" = "Edit review feedback";
+
+"完成后返回，内容不会自动发送。" = "Done returns to the previous screen. Nothing is sent automatically.";
+
+"查看提交内容" = "View submitted text";
+
+"提交内容" = "Submitted text";
+
+"这是本次提交的任务内容。" = "This is the task content you submitted.";
+
+"预览合并" = "Preview merge";
+
+"合并预览" = "Merge preview";
+
+"预览不会修改草稿，返回后可选择加入草稿。" = "Previewing does not change the draft. Return to add the feedback if desired.";
+
+/* Fixed result files */
+"预览正在准备" = "Preparing preview";
+"预览未完成，可查看原文件" = "Preview incomplete; open the original";
+"查看结果" = "View result";
+"版本记录" = "Version history";
+"预览正在准备，原文件同步完成后可下载" = "Preparing preview. Download the original after syncing.";
+"预览未完成，原文件仍可下载" = "Preview incomplete. The original remains available.";
+"重试预览" = "Retry preview";
+"请重新生成这个结果的预览：" = "Prepare the preview for this result again:";
+"调用 prepare_result_preview，并保持原文件不变。" = "Use prepare_result_preview and preserve the original.";
+"部分字体不可用，预览排版可能与原文件不同" = "Some fonts are unavailable; preview layout may differ.";
+"下载原文件" = "Download original";
+"分享原文件" = "Share original";
+"分享 PDF 预览" = "Share PDF preview";
+"提出修改" = "Request changes";
+"页码" = "Page";
+"位置（页码、单元格或图片区域）" = "Location (page, cell or image area)";
+"想修改什么？" = "What would you like to change?";
+"加入对话草稿" = "Add to draft";
+"打开原文件" = "Open original";
+"文件尚未同步" = "File has not synced";
+"同步完成后可以查看，已同步文件不需要电脑在线" = "View after syncing. Synced files remain available while the computer is offline.";
+"工作表" = "Worksheet";
+"工作表预览不显示图表、图片和条件格式；完整内容请打开原文件" = "Charts, images and conditional formatting are omitted. Open the original for full content.";
+"部分公式未保存计算结果" = "Some formulas have no saved result";
+"行范围" = "Rows";
+"前一组列" = "Previous columns";
+"后一组列" = "Next columns";
+"结果未保存" = "No saved result";
+"引用这个单元格" = "Reference this cell";
+"请修改这个固定版本的结果文件：" = "Please revise this fixed version of the result file:";
+"修改后调用 publish_result，使用上述 resultId 和 expectedVersion 发布新版本。" = "Publish a new version using publish_result with this resultId and expectedVersion.";
+"已保存的结果目录" = "Saved result directory";
+"还没有结果文件" = "No result files yet";
+"原文件已同步" = "Original synced";
+"正在同步原文件" = "Syncing original";
+"查看全部附件" = "View all attachments";
+"结果文件" = "Result files";
+"相关电脑任务" = "Related computer tasks";
+"交给电脑生成" = "Generate on computer";
+"请根据下面的聊天内容生成结果文件，并用 publish_result 发布：" = "Generate result files from this conversation and publish with publish_result:";
+"请先完成或取消尚未创建的电脑任务，再转交这段聊天。" = "Complete or cancel the pending computer task before transferring this conversation.";
+
+"继续下载" = "Continue download";
+
+"下载已暂停" = "Download paused";
+
+"继续下载后可查看预览" = "Continue downloading to view the preview";
+
+"正在连接…" = "Connecting…";
+
+"安全连接" = "Secure connection";
+
+"登录帮助" = "Sign-in help";
+
+"使用 FunnyWork 账号和密码登录，连接失败时请检查网络后重试。" = "Sign in with your FunnyWork account and password. If the connection fails, check your network and try again.";
+
+"自建服务配置" = "Self-hosted service";
+
+"官方服务无需设置；仅在管理员提供自建服务地址时修改。" = "The official service needs no setup. Change this only when your administrator provides a self-hosted service address.";
+
+"此范围没有已保存的值" = "No saved values in this range";
+
+"当前模型" = "Current model";
+"思考档位" = "Thinking level";
+"费用已由未完成任务预留，请稍后重试。" = "Funds are reserved by unfinished tasks. Please try again later.";
+
+"连接失败" = "Connection failed";
+
+"重试连接" = "Retry connection";
+
+"搜索" = "Search";

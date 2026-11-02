@@ -1,0 +1,12 @@
+version: 1
+scenario: cua-text
+profile: headless
+composition: cua-text
+recording: authored
+header:
+  class: cua-text
+  pin: true
+replay:
+  override: true
+platform: posix
+permission: danger-full-access

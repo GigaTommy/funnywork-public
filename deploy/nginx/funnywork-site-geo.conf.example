@@ -1,0 +1,15 @@
+# Include inside each existing HTTPS server, alongside the existing static routes.
+# Publish the per-origin build output to /srv/funnywork/site first.
+# Exact locations only: never expose the authoring tree or alter API/admin access.
+location = /search.js { root /srv/funnywork/site; try_files $uri =404; limit_except GET { deny all; } }
+location = /solutions.html { root /srv/funnywork/site; try_files $uri =404; limit_except GET { deny all; } }
+location = /quarterly-review.html { root /srv/funnywork/site; try_files $uri =404; limit_except GET { deny all; } }
+location = /index.en.html { root /srv/funnywork/site; try_files $uri =404; limit_except GET { deny all; } }
+location = /solutions.en.html { root /srv/funnywork/site; try_files $uri =404; limit_except GET { deny all; } }
+location = /quarterly-review.en.html { root /srv/funnywork/site; try_files $uri =404; limit_except GET { deny all; } }
+location = /security.en.html { root /srv/funnywork/site; try_files $uri =404; limit_except GET { deny all; } }
+location = /privacy.en.html { root /srv/funnywork/site; try_files $uri =404; limit_except GET { deny all; } }
+location = /download.en.html { root /srv/funnywork/site; try_files $uri =404; limit_except GET { deny all; } }
+location = /robots.txt { root /srv/funnywork/site; try_files $uri =404; limit_except GET { deny all; } default_type text/plain; }
+location = /sitemap.xml { root /srv/funnywork/site; try_files $uri =404; limit_except GET { deny all; } default_type application/xml; }
+location = /download.html { return 308 /download/$is_args$args; }

@@ -1,0 +1,15 @@
+--- a/lib/index.js
++++ b/lib/index.js
+@@ -10,6 +10,12 @@
+ const { createEntryApi } = require('node-addon-native-custom-loader');
+ const api = createEntryApi(node_path_1.default.resolve(__dirname, '..'));
+ function requireBuiltin(moduleId) {
++    // Desktop already launches its Host with --expose-internals. Use Node's
++    // builtin loader there rather than probing a version-specific V8 layout.
++    if (process.versions.electron && process.execArgv.includes('--expose-internals') &&
++        require('node:module').isBuiltin(moduleId)) {
++        return require(moduleId);
++    }
+     return api.requireBuiltin(moduleId);
+ }
+ function isAllowedInternalId(moduleId) {

@@ -1,0 +1,27 @@
+{
+  "type": "design",
+  "designSystems": [],
+  "primaryDesignSystem": null,
+  "assets": {
+    "企业模型接口识别工具": {
+      "versions": [
+        {
+          "path": "index.manual.html",
+          "createdAt": "2026-10-23T05:38:53.356Z",
+          "status": "changes-requested"
+        }
+      ]
+    },
+    "模型检测启动页": {
+      "versions": [
+        {
+          "path": "index.html",
+          "createdAt": "2026-10-23T06:16:54.471Z",
+          "status": "needs-review"
+        }
+      ]
+    }
+  },
+  "createdAt": "2026-10-23T05:38:53.357Z",
+  "updatedAt": "2026-10-23T06:24:44.490Z"
+}

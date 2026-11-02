@@ -1,0 +1,16 @@
+# Bilingual-pair consistency record for guide.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write docs/upgrade-guide/v0.2.1-alpha.1/funnywork-provider-groups/guide.md
+/:
+  en: 5bc5b2cb60bc6b81
+  zh: 9c014420cc461ff1
+/funnywork-provider-groups:
+  en: 79192c3380212c5c
+  zh: 6270bd7b3cf77c10
+/funnywork-provider-groups/change:
+  en: 2bd7d0f8b0c66423
+  zh: ef76f39eb2ef0353
+/funnywork-provider-groups/migration:
+  en: 121a4bedb6c8f51b
+  zh: ba1ce19c0b564dba

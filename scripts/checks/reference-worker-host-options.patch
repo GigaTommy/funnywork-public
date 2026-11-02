@@ -1,0 +1,36 @@
+diff --git a/scripts/worker.py b/scripts/worker.py
+index 64be0fe..f02ec3d 100644
+--- a/scripts/worker.py
++++ b/scripts/worker.py
+@@ -128,10 +128,12 @@ def add_tls_arguments(parser):
+ 
+ 
+ def configured_client(args):
+-    if args.host_admission and args.host_parent_pid is None:
++    host_admission = getattr(args, 'host_admission', False)
++    host_parent_pid = getattr(args, 'host_parent_pid', None)
++    if host_admission and host_parent_pid is None:
+         raise ValueError('Host admission requires parent identity')
+-    admission = HostAdmission() if args.host_admission else None
+-    if args.host_parent_pid is not None and args.host_parent_pid<1:
++    admission = HostAdmission() if host_admission else None
++    if host_parent_pid is not None and host_parent_pid<1:
+         raise ValueError('Invalid host parent PID')
+     if os.name != 'posix':
+         raise ValueError('POSIX credential protection required')
+@@ -298,10 +300,12 @@ def main():
+     parser.add_argument('--host-admission',action='store_true')
+     add_tls_arguments(parser)
+     args = parser.parse_args()
+-    if args.host_admission and args.host_parent_pid is None:
++    host_admission = getattr(args, 'host_admission', False)
++    host_parent_pid = getattr(args, 'host_parent_pid', None)
++    if host_admission and host_parent_pid is None:
+         raise ValueError('Host admission requires parent identity')
+-    admission = HostAdmission() if args.host_admission else None
+-    if args.host_parent_pid is not None and args.host_parent_pid<1:
++    admission = HostAdmission() if host_admission else None
++    if host_parent_pid is not None and host_parent_pid<1:
+         raise ValueError('Invalid host parent PID')
+     if os.name != 'posix':
+         raise ValueError('POSIX state protection required; Windows support pending')

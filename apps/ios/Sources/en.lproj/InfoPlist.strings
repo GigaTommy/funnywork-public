@@ -1,0 +1,9 @@
+"CFBundleDisplayName" = "FunnyWork";
+"CFBundleName" = "FunnyWork";
+
+"NSMicrophoneUsageDescription" = "Use the microphone to dictate messages.";
+"NSSpeechRecognitionUsageDescription" = "Convert speech to text. Audio may be processed by Apple.";
+
+"NSCameraUsageDescription" = "Scan QR codes or take photos.";
+
+"NSPhotoLibraryAddUsageDescription" = "Save the images you choose.";

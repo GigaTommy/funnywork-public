@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>模型检测 · FunnyWork</title>
+<style>
+:root{color-scheme:light dark;--bg:#f8f6f1;--panel:#fffdfa;--ink:#292724;--muted:#706b64;--line:#ddd9d2;--button:#292724;--button-text:#fff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}header{height:76px;padding:0 6vw;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.brand{font-size:20px;font-weight:650;letter-spacing:-.4px}button{border:0;background:transparent;color:var(--muted);font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:2px solid var(--ink);outline-offset:4px}main{max-width:520px;margin:100px auto;padding:0 24px}h1{font-size:30px;font-weight:600;letter-spacing:-.8px;margin:0 0 32px}.card{border:1px solid var(--line);background:var(--panel);padding:28px;border-radius:12px}.download{display:block;text-align:center;padding:12px 18px;background:var(--button);color:var(--button-text);border-radius:8px;text-decoration:none;font-weight:500}.download:hover{opacity:.88}.hint{font-size:13px;color:var(--muted);margin:16px 0 0}.steps{padding-left:22px;margin:26px 0 0;font-size:14px}.steps li{padding:6px 0}details{margin-top:30px;color:var(--muted);font-size:13px}summary{cursor:pointer}details a{color:var(--ink)}footer{font-size:12px;color:var(--muted);margin-top:26px}@media(prefers-color-scheme:dark){:root{--bg:#201f1d;--panel:#2a2825;--ink:#eeeae2;--muted:#b6afa5;--line:#45413c;--button:#eeeae2;--button-text:#24221f}}@media(max-width:600px){header{height:64px;padding:0 24px}main{margin:55px auto}.card{padding:22px}h1{font-size:27px}}
+</style>
+</head>
+<body>
+<header><div class="brand">FunnyWork</div><button id="language" aria-label="Switch language">English</button></header>
+<main data-screen-label="模型检测启动页">
+<h1 data-key="title">模型检测</h1>
+<section class="card">
+<a class="download" href="FunnyWork-model-checker-windows.zip" download data-key="download">下载 Windows 工具</a>
+<p class="hint" data-key="open">解压后，双击「启动工具.cmd」。</p>
+<ol class="steps"><li data-key="step1">填写登录和对话页地址。</li><li data-key="step2">在打开的浏览器中登录。</li><li data-key="step3">发送一条测试消息，查看检测结果。</li></ol>
+</section>
+<details><summary data-key="other">其他方式</summary><p><a href="index.manual.html" data-key="manual">手动检查网页请求</a></p></details>
+<footer data-key="requirement">Windows 10 / 11 · Edge 或 Chrome</footer>
+</main>
+<script>
+const copy={title:['模型检测','Model check'],download:['下载 Windows 工具','Download for Windows'],open:['解压后，双击「启动工具.cmd」。','Extract the ZIP, then open 启动工具.cmd.'],step1:['填写登录和对话页地址。','Enter the sign-in and chat page URLs.'],step2:['在打开的浏览器中登录。','Sign in in the browser window.'],step3:['发送一条测试消息，查看检测结果。','Send one test message and view the results.'],other:['其他方式','Other options'],manual:['手动检查网页请求','Inspect requests manually'],requirement:['Windows 10 / 11 · Edge 或 Chrome','Windows 10 / 11 · Edge or Chrome']};let locale=0;document.getElementById('language').onclick=()=>{locale=1-locale;document.documentElement.lang=locale?'en':'zh-CN';document.title=copy.title[locale]+' · FunnyWork';document.querySelectorAll('[data-key]').forEach(e=>e.textContent=copy[e.dataset.key][locale]);document.getElementById('language').textContent=locale?'中文':'English';};
+</script>
+</body>
+</html>

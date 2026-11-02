@@ -1,0 +1,19 @@
+[project]
+name = "funnyworker-prototype"
+version = "0.1.0"
+description = "FunnyWorker single-node control and execution prototype"
+requires-python = ">=3.10"
+dependencies = ["cryptography==50.0.1", "deepseek-harness-sdk==0.1.5rc1"]
+
+[project.scripts]
+funnyworker = "funnyworker.server:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["funnyworker"]
+
+[tool.setuptools.package-data]
+funnyworker = ["web/*.html", "web/*.css", "web/*.js", "harness-policy.yml"]

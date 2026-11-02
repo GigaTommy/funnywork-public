@@ -1,0 +1,20 @@
+CREATE TABLE desktop_model_receipts (
+ tenant_id VARCHAR(64) NOT NULL,
+ principal_id VARCHAR(64) NOT NULL REFERENCES principals(id),
+ device_id VARCHAR(32) NOT NULL,
+ issued_version BIGINT NOT NULL,
+ issued_digest VARCHAR(64) NOT NULL,
+ recipient VARCHAR(64) NOT NULL,
+ issued_at BIGINT NOT NULL,
+ expires_at BIGINT NOT NULL,
+ settings_json TEXT NOT NULL,
+ sync_device_id VARCHAR(64) REFERENCES sync_devices(id),
+ applied_version BIGINT,
+ applied_digest VARCHAR(64),
+ applied_at BIGINT,
+ client_version VARCHAR(80),
+ reported_at BIGINT,
+ report_state VARCHAR(20),
+ PRIMARY KEY(tenant_id,principal_id,device_id),
+ UNIQUE(tenant_id,principal_id,sync_device_id)
+);

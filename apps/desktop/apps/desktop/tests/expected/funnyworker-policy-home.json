@@ -1,0 +1,26 @@
+[
+  {
+    "config": {
+      "fontSize": 16,
+    },
+    "id": "ui-theme",
+  },
+  {
+    "config": {
+      "enabled": true,
+    },
+    "id": "other",
+  },
+  {
+    "config": {
+      "preference": "dark",
+    },
+    "id": "ui-theme",
+  },
+  {
+    "config": {
+      "preference": "zh-CN",
+    },
+    "id": "locale",
+  },
+]

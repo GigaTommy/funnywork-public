@@ -1,0 +1,76 @@
+import { defineConfig, loadEnv, type UserConfig } from 'vite';
+import createPlugins from './vite/plugins';
+import autoprefixer from 'autoprefixer'; // css自动添加兼容性前缀
+import path from 'path';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig(({ mode, command }): UserConfig => {
+  const env = loadEnv(mode, process.cwd());
+  return {
+    // 部署生产环境和开发环境下的URL。
+    // 默认情况下，vite 会假设你的应用是被部署在一个域名的根路径上
+    // 例如 https://www.ruoyi.vip/。如果应用被部署在一个子路径上，你就需要用这个选项指定这个子路径。例如，如果你的应用被部署在 https://www.ruoyi.vip/admin/，则设置 baseUrl 为 /admin/。
+    base: env.VITE_APP_CONTEXT_PATH,
+    resolve: {
+      dedupe: ['react', 'react-dom'],
+      alias: {
+        '@': path.resolve(__dirname, './src')
+      },
+      extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue']
+    },
+    // https://cn.vitejs.dev/config/#resolve-extensions
+    plugins: [...createPlugins(env, command === 'build'), ...react()],
+    server: {
+      host: '127.0.0.1',
+      port: Number(env.VITE_APP_PORT),
+      open: true,
+      proxy: {
+        '/api/v1': { target: env.VITE_BUSINESS_PROXY || 'http://127.0.0.1:8765', changeOrigin: true },
+        '/api/account': { target: env.VITE_BUSINESS_PROXY || 'http://127.0.0.1:8765', changeOrigin: true },
+        [env.VITE_APP_BASE_API]: {
+          target: env.VITE_IDENTITY_PROXY || 'http://127.0.0.1:8767',
+          changeOrigin: true,
+          ws: true,
+          rewrite: (path) => path.replace(new RegExp('^' + env.VITE_APP_BASE_API), '')
+        }
+      }
+    },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          // additionalData: '@use "@/assets/styles/variables.module.scss as *";'
+          // javascriptEnabled: true
+        }
+      },
+      postcss: {
+        plugins: [
+          // 浏览器兼容性
+          autoprefixer(),
+          {
+            postcssPlugin: 'internal:charset-removal',
+            AtRule: {
+              charset: (atRule) => {
+                atRule.remove();
+              }
+            }
+          }
+        ]
+      }
+    },
+    // 预编译
+    optimizeDeps: {
+      include: [
+        'vue',
+        'vue-router',
+        'pinia',
+        'axios',
+        '@vueuse/core',
+        'echarts',
+        'vue-i18n',
+        '@vueup/vue-quill',
+        'image-conversion',
+        'element-plus/es/components/**/css'
+      ]
+    }
+  };
+});

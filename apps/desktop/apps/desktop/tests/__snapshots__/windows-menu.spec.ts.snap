@@ -1,0 +1,75 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`exposes account actions in the Windows caption popup (en) 1`] = `
+[
+  {
+    "label": "File",
+    "submenu": [
+      {
+        "label": "Close Page or Window",
+      },
+    ],
+  },
+  {
+    "click": [Function],
+    "label": "Conversation history",
+  },
+  {
+    "click": [Function],
+    "label": "Connect phone",
+  },
+  {
+    "click": [Function],
+    "label": "Sign out ({username})",
+  },
+  {
+    "type": "separator",
+  },
+  {
+    "label": "About FunnyWork",
+  },
+  {
+    "label": "Check for Updates…",
+  },
+  {
+    "label": "Exit",
+  },
+]
+`;
+
+exports[`exposes account actions in the Windows caption popup (zh) 1`] = `
+[
+  {
+    "label": "文件",
+    "submenu": [
+      {
+        "label": "关闭页面或窗口",
+      },
+    ],
+  },
+  {
+    "click": [Function],
+    "label": "对话历史",
+  },
+  {
+    "click": [Function],
+    "label": "连接手机",
+  },
+  {
+    "click": [Function],
+    "label": "退出账号（{username}）",
+  },
+  {
+    "type": "separator",
+  },
+  {
+    "label": "关于 FunnyWork",
+  },
+  {
+    "label": "检查更新…",
+  },
+  {
+    "label": "退出",
+  },
+]
+`;

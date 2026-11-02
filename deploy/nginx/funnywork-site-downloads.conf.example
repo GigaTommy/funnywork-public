@@ -1,0 +1,11 @@
+# Include inside the existing public HTTPS server. Keep API/admin locations unchanged.
+location = /download { return 302 /download/$is_args$args; }
+location = /download/ { root /srv/funnywork/site; try_files /download.html =404; default_type text/html; limit_except GET { deny all; } add_header X-Content-Type-Options nosniff always; add_header Cache-Control no-store always; add_header Content-Security-Policy "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'none'" always; }
+location = /downloads.js { root /srv/funnywork/site; try_files $uri =404; limit_except GET { deny all; } add_header X-Content-Type-Options nosniff always; add_header Cache-Control no-store always; }
+location = /downloads.json { root /srv/funnywork/site; try_files $uri =404; limit_except GET { deny all; } add_header X-Content-Type-Options nosniff always; add_header Cache-Control no-store always; }
+location = /download.css { root /srv/funnywork/site; try_files $uri =404; limit_except GET { deny all; } add_header X-Content-Type-Options nosniff always; }
+# Versioned installer directories must contain public, verified artifacts only.
+location ^~ /dsh-desk/releases/ { root /var/www/funnyworker-updates; try_files $uri =404; autoindex off; limit_except GET { deny all; } add_header X-Content-Type-Options nosniff always; add_header Content-Disposition attachment; add_header Cache-Control "public, max-age=31536000, immutable"; }
+# Add APK routing with scripts/setup/update-site-download-routing.py so the existing
+# HTTPS server's security headers are retained. It serves versioned FunnyWork APKs
+# without adding a separate location for every release; other names return 404.

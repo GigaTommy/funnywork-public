@@ -1,0 +1,1 @@
+CREATE INDEX employee_history_instruction_cursor ON employee_chat_instructions(chat_id,task_id,unit_ordinal,id);

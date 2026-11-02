@@ -1,0 +1,8 @@
+{
+  "base_url": "https://model-api.example.internal/v1",
+  "protocol": "auto",
+  "model": "replace-with-deployment-model-id",
+  "headers": {"Authorization": "Bearer ${FW_POC_API_TOKEN}"},
+  "models_path": "/models",
+  "timeout_seconds": 30
+}

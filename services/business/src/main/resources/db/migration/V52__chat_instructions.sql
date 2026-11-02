@@ -1,0 +1,2 @@
+CREATE TABLE employee_chat_instructions(id VARCHAR(64) PRIMARY KEY,chat_id VARCHAR(64) NOT NULL,task_id VARCHAR(64) NOT NULL,request_key VARCHAR(120) NOT NULL,request_hash VARCHAR(64) NOT NULL,prompt TEXT NOT NULL,plan_version INTEGER NOT NULL,unit_ordinal INTEGER NOT NULL,created_at BIGINT NOT NULL,UNIQUE(chat_id,request_key));
+CREATE INDEX employee_chat_instructions_task ON employee_chat_instructions(task_id,unit_ordinal);
