@@ -26,10 +26,22 @@
         <dependency>
             <groupId>com.aizuda</groupId>
             <artifactId>snail-job-client-starter</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.fory</groupId>
+                    <artifactId>fory-core</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.aizuda</groupId>
             <artifactId>snail-job-client-job-core</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.fory</groupId>
+                    <artifactId>fory-core</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>

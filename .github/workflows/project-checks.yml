@@ -24,6 +24,7 @@ jobs:
         if: runner.os == 'Linux'
         run: |
           python scripts/checks/test_public_source.py
+          python scripts/checks/test_identity_package.py
           python scripts/checks/test_regional_configuration.py
           python scripts/checks/test-site-download-routing.py
       - run: python -m compileall -q funnyworker scripts
@@ -48,11 +49,12 @@ jobs:
           cache: pnpm
           cache-dependency-path: apps/management/pnpm-lock.yaml
       - run: sh scripts/build-management.command
-      - name: Identity directory tests
+      - name: Identity security tests and runtime package
         run: >-
           sh scripts/mvn.sh -q -f services/identity/pom.xml -pl ruoyi-admin -am
-          -DskipTests=false -Dtest=DirectorySyncTest,HttpDirectoryAdapterTest,ManagementCorsTest,ActuatorSecurityTest
-          -Dsurefire.failIfNoSpecifiedTests=false test
+          -DskipTests=false -Dtest=DirectorySyncTest,HttpDirectoryAdapterTest,ManagementCorsTest,ActuatorSecurityTest,RedisCodecSecurityTest
+          -Dsurefire.failIfNoSpecifiedTests=false package
+      - run: python scripts/checks/check-identity-package.py
       - name: Business integration tests
         run: >-
           sh scripts/mvn.sh -q

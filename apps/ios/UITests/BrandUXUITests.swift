@@ -5,6 +5,7 @@ final class BrandUXUITests: XCTestCase {
         let app = XCUIApplication()
         app.launchArguments = ["--ui-test-mobile-chat", "--ui-test-mobile-network", "--ui-test-reset", "-AppleLanguages", "(en)", "-appearance", "dark", "-UIPreferredContentSizeCategoryName", "UICTContentSizeCategoryAccessibilityXXXL"]
         app.launch()
+        addTeardownBlock { app.terminate() }
         let status = app.buttons["home-connection-status"]
         XCTAssertTrue(status.waitForExistence(timeout: 10))
         XCTAssertEqual(status.value as? String, "Temporarily disconnected")
@@ -20,8 +21,13 @@ final class BrandUXUITests: XCTestCase {
         let app = XCUIApplication()
         app.launchArguments = ["--ui-test-mobile-chat", "--ui-test-reset", "-AppleLanguages", "(en)"]
         app.launch()
+        addTeardownBlock { app.terminate() }
         let field = app.textFields["home-chat-message"]
-        XCTAssertTrue(field.waitForExistence(timeout: 10)); field.tap(); field.typeText("Preserved keyboard draft")
+        XCTAssertTrue(field.waitForExistence(timeout: 10))
+        XCTAssertTrue(field.isHittable)
+        field.tap()
+        XCTAssertTrue(app.keyboards.firstMatch.waitForExistence(timeout: 10))
+        app.typeText("Preserved keyboard draft")
         XCTAssertTrue(app.keyboards.firstMatch.waitForExistence(timeout: 5))
         app.buttons["Dismiss keyboard"].tap()
         XCTAssertTrue(app.keyboards.firstMatch.waitForNonExistence(timeout: 5))
@@ -32,8 +38,13 @@ final class BrandUXUITests: XCTestCase {
         let app = XCUIApplication()
         app.launchArguments = ["--ui-test-mobile-chat", "--ui-test-reset", "-AppleLanguages", "(en)"]
         app.launch()
+        addTeardownBlock { app.terminate() }
         let field = app.textFields["home-chat-message"]
-        XCTAssertTrue(field.waitForExistence(timeout: 10)); field.tap(); field.typeText("Swipe preserved draft")
+        XCTAssertTrue(field.waitForExistence(timeout: 10))
+        XCTAssertTrue(field.isHittable)
+        field.tap()
+        XCTAssertTrue(app.keyboards.firstMatch.waitForExistence(timeout: 10))
+        app.typeText("Swipe preserved draft")
         XCTAssertTrue(app.keyboards.firstMatch.waitForExistence(timeout: 5))
         app.scrollViews["home-chat-content"].swipeDown()
         XCTAssertTrue(app.keyboards.firstMatch.waitForNonExistence(timeout: 5))

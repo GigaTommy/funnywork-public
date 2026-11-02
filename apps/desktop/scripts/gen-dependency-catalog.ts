@@ -11,7 +11,7 @@ const ROOT = resolve(import.meta.dirname, '..')
 const PACKAGE = '@deepseek-ai/dsh'
 const ENTRY = `node_modules/${PACKAGE}`
 const REGISTRY = 'https://registry.npmjs.org/'
-const LOCK = 'scripts/dependency-catalog/package-lock.json'
+const LOCK = 'scripts/dependency-catalog/published-resolution.snapshot.json'
 const METADATA = 'scripts/dependency-catalog/resolution.json'
 const OUT = 'docs/dependency-catalog.json'
 

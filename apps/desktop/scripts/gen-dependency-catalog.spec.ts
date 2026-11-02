@@ -47,7 +47,7 @@ function fixture(): string {
   const root = mkdtempSync(join(tmpdir(), 'dsh-dependency-catalog-test-'))
   roots.push(root)
   mkdirSync(join(root, 'scripts/dependency-catalog'), { recursive: true })
-  writeFileSync(join(root, 'scripts/dependency-catalog/package-lock.json'), JSON.stringify(lockfile()))
+  writeFileSync(join(root, 'scripts/dependency-catalog/published-resolution.snapshot.json'), JSON.stringify(lockfile()))
   writeFileSync(join(root, 'scripts/dependency-catalog/resolution.json'), JSON.stringify({
     capturedAt: '2026-09-12T00:00:00.000Z', npm: '11.17.0', node: '24.19.0',
     platform: 'darwin', arch: 'arm64', registry: 'https://registry.npmjs.org/', installStrategy: 'hoisted',
@@ -132,7 +132,7 @@ describe('published npm dependency catalog', () => {
     writeFileSync(path, output)
     const updated = lockfile()
     updated.packages['node_modules/peer'].version = '3.1.0'
-    writeFileSync(join(root, 'scripts/dependency-catalog/package-lock.json'), JSON.stringify(updated))
+    writeFileSync(join(root, 'scripts/dependency-catalog/published-resolution.snapshot.json'), JSON.stringify(updated))
     expect(isDependencyCatalogCurrent(root)).toBe(false)
   })
 
@@ -148,6 +148,7 @@ describe('published npm dependency catalog', () => {
 
   it('isolates scoped registries, resolver settings, and caches from user, global, and environment configuration', async () => {
     const root = fixture()
+    writeFileSync(join(root, 'package.json'), JSON.stringify({ name: 'catalog-config-fixture', private: true }))
     const userConfig = join(root, 'user.npmrc')
     const globalConfig = join(root, 'global.npmrc')
     writeFileSync(userConfig, '@deepseek-ai:registry=https://user-override.invalid/\nstrict-peer-deps=true\n')
